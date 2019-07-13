@@ -1,0 +1,138 @@
+@charset "utf-8";
+body{
+text-align: center;
+	height: 100%;
+}
+header {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	margin-top: -10px;
+	margin-left:-8px;
+	margin-right: -8px;
+	font-weight: bold;
+	opacity: .93;
+	border:#8E8A8A;
+	border-style: solid;
+}
+h1{
+	margin-left: 10px;
+	font-size: 20px;
+}
+nav {
+	align-self: center;
+	justify-content: center;
+	background-color: white;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 3em;
+  margin-top: 0px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+#frontImageSection{
+	width: 100%;
+	background: #434343;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+#frontImage{
+	width:100%;
+	height: auto;
+}
+#imageEffect{
+	width: 100%;
+	margin-top: -200px;
+	margin-bottom: -8px;
+}
+#infoPicture{
+	background-color: #CE3B08;
+}
+#peytonPicture{
+	padding: 5% 20% 5% 20%;
+	display: block;
+	width: 60%;
+	height: auto;
+}
+#info{
+	padding: 0% 8em 0% 1em;
+	align-self: center;
+	text-align: left;
+}
+#text {
+	display: grid;
+	grid-template-areas: "peytonPicture info";
+	grid-template-columns: 50% 50%;
+}
+#projects{
+	display: grid;
+	grid-template-areas: 
+		"project1 project2 project3 project4";
+	grid-template-columns: 25% 25% 25% 25%;
+}
+.projectPicture{
+	width: 10em;
+	height: auto;
+}
+#email{
+	color: #CE3B08;
+}
+#socialMedia{
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-bottom: 3em;
+	display: grid;
+	grid-template-areas: "twitter facebook instagram";
+}
+
+.button{
+	width: auto;
+	height: 3EM;
+}
+#footerTop{
+	display:grid;
+	grid-template-areas: " about portfolio followMe";
+	background-color: #2B2929;
+	color: #D9D9D9;
+	margin-left: -8px;
+	margin-right: -8px;
+	padding: 2em;
+	font-size: 18px;
+	text-align: center;
+}
+.footerList{
+	font-size: .8em;
+	list-style: none;
+    padding-left: 0px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #D9D9D9;
+}
+
+footer ul li a:hover {
+  color: orange;
+}
+#footerEnd{
+	background-color:#181717;
+	color:#D9D9D9;
+	text-align: center;
+	padding: .5em;
+	margin-bottom:-8px;
+	margin-left: -8px;
+	margin-right: -8px;
+	
+}
+/* CSS Document */
