@@ -93,7 +93,7 @@ nav ul li a:hover {
 	padding-right: 25%;
 	padding-bottom: 3em;
 	display: grid;
-	grid-template-areas: "twitter facebook instagram";
+	grid-template-areas: "twitter facebook instagram linkedin github";
 }
 
 .button{
