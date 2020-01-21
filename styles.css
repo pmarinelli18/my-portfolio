@@ -78,7 +78,8 @@ nav ul li a:hover {
 #projects{
 	display: grid;
 	grid-template-areas: 
-		"project1 project2 project3 project4";
+		"project1 project2 project3 project4"
+		"project5 project6 project7 project8";
 	grid-template-columns: 25% 25% 25% 25%;
 }
 .projectPicture{
