@@ -94,6 +94,7 @@
 		padding-left: 25%;
 		padding-right: 25%;
 		padding-bottom: 3em;
+		grid-column-gap: 10px;
 		display: grid;
 		grid-template-areas: "twitter facebook instagram linkedin github";
 	}
