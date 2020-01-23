@@ -84,8 +84,7 @@
 		grid-template-columns: 25% 25% 25% 25%;
 	}
 	.projectPicture{
-		width: 85
-		%;
+		width: 75%;
 		height: auto;
 	}
 	#email{
