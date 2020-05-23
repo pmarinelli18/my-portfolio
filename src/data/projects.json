@@ -1,0 +1,65 @@
+[
+	[
+		{
+			"title": "UF Department of Neurosergery Website",
+			"images": [
+				"FinalPhoto1.png",
+				"S20_7_Neuro6_1.gif",
+				"S20_7_Neuro6_2.gif",
+				"S20_7_Neuro6_3.gif"
+			],
+			"description": "My team and I developed a WebApp for the UF Department of Neuroseurgery. The client wanted a site that could remind patients of their appointments and help them navigate to the garage. Using the MERN Stack",
+			"link": "https://github.com/AlyssaMarotta/Neuro6"
+		},
+		{
+			"title": "Silent Disco",
+			"images": ["SilentDiscoStart.png", "SilentDiscoHome.png"],
+			"description": "Some description goes here",
+			"link": "https://github.com/pmarinelli18/SilentDiscoApp"
+		},
+		{
+			"title": "Text Adventure OOP Design",
+			"images": ["textadventure.png"],
+			"description": "Some description goes here",
+			"link": "https://docs.google.com/document/d/13_HJUcWRvp6wceIT5lGK1Ucv-kKCUDFbWZMEy43expw/edit?usp=sharing"
+		},
+		{
+			"title": "TPED Website",
+			"images": ["tpedwebsitehome.png"],
+			"description": "Some description goes here",
+			"link": "https://github.com/pmarinelli18/TPEDWebsite"
+		},
+		{
+			"title": "TPED Coaster",
+			"images": ["TPEDCoasterDesign.PNG"],
+			"description": "Some description goes here",
+			"link": "https://github.com/pmarinelli18/TPEDCoasterControlsFall2019"
+		},
+		{
+			"title": "Pascal Interpreter in Haskell",
+			"images": ["PascalInHaskell.png"],
+			"description": "Some description goes here",
+			"link": "https://github.com/pmarinelli18/Project3Dobra"
+		},
+		{
+			"title": "Pascal Interpreter in Java",
+			"images": ["antlr4_parse_tree2.png"],
+			"description": "Some description goes here",
+			"link": "https://github.com/Josequintas96/Proj2"
+		},
+		{
+			"title": "Lend an Eye",
+			"images": ["lendaneye1.PNG"],
+			"description": "Some description goes here",
+			"link": "https://github.com/pmarinelli18/SilentDiscoApp"
+		}
+	],
+	[
+		{
+			"title": "Twitter Tweet Tracker",
+			"images": ["NasaScreenshot.PNG"],
+			"description": "Some description goes here",
+			"link": "https://github.com/pmarinelli18/SilentDiscoApp"
+		}
+	]
+]
