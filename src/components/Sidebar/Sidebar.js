@@ -12,11 +12,16 @@ import {
 	Image,
 	Nav,
 	Sidebar,
+	Header,
+	Heading,
 	Avatar,
 	Drop,
 	grommet,
+	Collapsible,
+	Menu,
 	Stack,
 	Grid,
+	ResponsiveContext,
 } from "grommet";
 
 import CustomTheme from "../CustomTheme/CustomTheme";
@@ -31,6 +36,7 @@ import {
 	Linkedin,
 	MailOption,
 	Twitter,
+	Menu as MenuIcon,
 } from "grommet-icons";
 
 const SidebarFooter = () => (
@@ -151,24 +157,119 @@ const SidebarButton = ({ iconName, index }) => {
 };
 
 const SidebarNavigation = () => {
+	const [openNotification, setOpenNotification] = React.useState();
 	return (
-		<Sidebar
-			overflow="auto"
-			background="brand"
-			header={<SidebarHeader />}
-			footer={<SidebarFooter />}
-			pad="none"
-		>
-			<Nav>
-				{pages.map((page, i) => {
-					return (
-						<Link to={page.extension}>
-							<SidebarButton key={page.name} iconName={page.name} index={i} />
-						</Link>
-					);
-				})}
-			</Nav>
-		</Sidebar>
+		<ResponsiveContext>
+			{(responsive) =>
+				responsive === "small" ? (
+					// <div>
+					// 	<Box fill>
+					// 		<Box
+					// 			as="header"
+					// 			direction="row"
+					// 			align="center"
+					// 			pad={{ vertical: "small", horizontal: "medium" }}
+					// 			justify="between"
+					// 			background="brand"
+					// 			elevation="large"
+					// 			style={{ zIndex: "1000" }}
+					// 		>
+					// 			<Heading level={3} margin="none" color="white">
+					// 				<strong>My App</strong>
+					// 			</Heading>
+					// 			<Button
+					// 				onClick={() => setOpenNotification(!openNotification)}
+					// 				icon={<MenuIcon color="white" />}
+					// 			/>
+					// 		</Box>
+					// 	</Box>
+
+					// 	<Stack anchor="center">
+					// 		<Box flex direction="row">
+					// 			<Collapsible direction="horizontal" open={openNotification}>
+					// 				<Box
+					// 					flex
+					// 					width="medium"
+					// 					background="light-2"
+					// 					pad="small"
+					// 					elevation="small"
+					// 				>
+					// 					<Text size="xlarge">Sidebar</Text>
+					// 				</Box>
+					// 			</Collapsible>
+					// 		</Box>
+					// 	</Stack>
+					// </div>
+					<Box width="full">
+						<Header background="brand" pad="medium" width="full">
+							<Box
+								width="full"
+								direction="row"
+								align="center"
+								gap="small"
+								width="xxsmall"
+								height="xxsmall"
+							>
+								<Link to={"/Home"}>
+									<Image fill src="logo2.png" />
+								</Link>
+							</Box>
+							<Button
+								onClick={() => setOpenNotification(!openNotification)}
+								icon={<MenuIcon color="white" />}
+							/>
+						</Header>
+						<Collapsible direction="vertical" open={openNotification}>
+							<Box
+								flex
+								width="medium"
+								background="light-2"
+								pad="small"
+								elevation="small"
+							>
+								{pages.map((page, i) => {
+									return (
+										<Link
+											to={page.extension}
+											onClick={() => setOpenNotification(!openNotification)}
+										>
+											{page.name}
+											{/* <SidebarButton
+												key={page.name}
+												iconName={page.name}
+												index={i}
+											/> */}
+										</Link>
+									);
+								})}
+							</Box>
+						</Collapsible>
+					</Box>
+				) : (
+					<Sidebar
+						overflow="auto"
+						background="brand"
+						header={<SidebarHeader />}
+						footer={<SidebarFooter />}
+						pad="none"
+					>
+						<Nav>
+							{pages.map((page, i) => {
+								return (
+									<Link to={page.extension}>
+										<SidebarButton
+											key={page.name}
+											iconName={page.name}
+											index={i}
+										/>
+									</Link>
+								);
+							})}
+						</Nav>
+					</Sidebar>
+				)
+			}
+		</ResponsiveContext>
 	);
 };
 

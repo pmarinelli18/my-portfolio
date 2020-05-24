@@ -21,6 +21,7 @@ import {
 	grommet,
 	Stack,
 	Grid,
+	ResponsiveContext,
 } from "grommet";
 
 import CustomTheme from "./components/CustomTheme/CustomTheme";
@@ -47,6 +48,15 @@ routes.map(({ path, index }) => {
 });
 console.log(currentPage);
 
+const ResponsiveGrid = ({ children, areas, ...props }) => {
+	const size = React.useContext(ResponsiveContext);
+	return (
+		<Grid areas={areas[size]} {...props}>
+			{children}
+		</Grid>
+	);
+};
+
 function App(props) {
 	const [i, setI] = useState(currentPage);
 	const updateI = (s) => {
@@ -56,15 +66,32 @@ function App(props) {
 	return (
 		<div>
 			<Grommet theme={CustomTheme} full>
-				<Grid
+				<ResponsiveGrid
 					fill
 					rows={["auto", "flex"]}
 					columns={["auto", "flex"]}
-					areas={[
-						{ name: "sidebar", start: [0, 1], end: [0, 1] },
-						{ name: "main", start: [1, 1], end: [1, 1] },
-					]}
-					style={{ position: "fixed" }}
+					areas={{
+						xxsmall: [
+							{ name: "sidebar", start: [1, 0], end: [1, 0] },
+							{ name: "main", start: [1, 1], end: [1, 1] },
+						],
+						Xsmall: [
+							{ name: "sidebar", start: [1, 0], end: [1, 0] },
+							{ name: "main", start: [1, 1], end: [1, 1] },
+						],
+						small: [
+							{ name: "sidebar", start: [1, 0], end: [1, 0] },
+							{ name: "main", start: [1, 1], end: [1, 1] },
+						],
+						medium: [
+							{ name: "sidebar", start: [0, 1], end: [0, 1] },
+							{ name: "main", start: [1, 1], end: [1, 1] },
+						],
+						large: [
+							{ name: "sidebar", start: [0, 1], end: [0, 1] },
+							{ name: "main", start: [1, 1], end: [1, 1] },
+						],
+					}}
 				>
 					<Box
 						gridArea="sidebar"
@@ -134,7 +161,7 @@ function App(props) {
       </Switch>
       </CSSTransition>
       </SwitchTransition> */}
-				</Grid>
+				</ResponsiveGrid>
 			</Grommet>
 
 			{/* <Nav direction="row" background="brand" pad="medium">
