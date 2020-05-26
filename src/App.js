@@ -135,7 +135,7 @@ function App(props) {
 												unmountOnExit={true}
 												onEnter={(e) => updateI(index)}
 											>
-												<Box className="page" fill="vertical">
+												<Box className="page" fill>
 													<Component />
 												</Box>
 											</CSSTransition>

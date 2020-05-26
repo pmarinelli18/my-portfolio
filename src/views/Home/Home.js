@@ -9,8 +9,10 @@ import {
 	Grid,
 	Box,
 	Header,
+	Paragraph,
 	Image,
 	Carousel,
+	Heading,
 } from "grommet";
 import CustomTheme from "../../components/CustomTheme/CustomTheme";
 import "./Home.css";
@@ -40,8 +42,10 @@ const Home = () => {
 					gap="small"
 				>
 					<Box className="mainLeft" gridArea="main">
-						<h1>Hi, I'm Peyton</h1>
-						<p>A Software Developer based in Florida</p>
+						<Heading margin="xsmall">Hi, I'm Peyton</Heading>
+						<Paragraph alignSelf="center" margin="xsmall">
+							A Software Developer based in Florida
+						</Paragraph>
 						<p>
 							<Link to={"/contact"}>
 								<Button label="Contact Me" />

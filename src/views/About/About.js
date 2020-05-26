@@ -1,5 +1,15 @@
 import React, { useRef, useState } from "react";
-import { Grommet, Button, Text, grommet, Grid, Box, Header } from "grommet";
+import {
+	Grommet,
+	Button,
+	Text,
+	grommet,
+	Grid,
+	Box,
+	Header,
+	Heading,
+	Paragraph,
+} from "grommet";
 
 const About = () => {
 	return (
@@ -16,8 +26,8 @@ const About = () => {
 					gap="small"
 				>
 					<Box gridArea="main">
-						<h1>About</h1>
-						<p>
+						<Heading>About Me</Heading>
+						<Paragraph>
 							I am a Computer Science Engineering student at the University of
 							Florida. I like challenging myself and finding ways to improve the
 							lives of people around me. This has lead me to participate in
@@ -25,7 +35,7 @@ const About = () => {
 							will never be completed, it will continue to be updated as I work
 							on more projects. If you wish to get in contact with me my contact
 							information click the link below!
-						</p>
+						</Paragraph>
 					</Box>
 					<Box gridArea="picture">
 						<Box style={{ maxWidth: "90%" }} pad="large"></Box>

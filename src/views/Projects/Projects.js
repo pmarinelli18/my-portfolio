@@ -68,7 +68,7 @@ const Projects = () => {
 												<Box
 													pad="medium"
 													align="center"
-													background={{ color: "light-6", opacity: "strong" }}
+													background={{ color: "white", opacity: "strong" }}
 													round
 													gap="small"
 													fill="vertical"
