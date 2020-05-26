@@ -96,6 +96,7 @@ const FooterSidebarButton = ({ iconName, index }) => {
 
 const SidebarHeader = () => (
 	<Box pad="small">
+		<Image fill src="logo2.png" />
 		<Box width="xxsmall" height="xxsmall">
 			<Link to={"/Home"}>
 				<Image fill src="logo2.png" />
@@ -210,6 +211,7 @@ const SidebarNavigation = () => {
 								width="xxsmall"
 								height="xxsmall"
 							>
+								<Image fill src="0.jpg" />
 								<Link to={"/Home"}>
 									<Image fill src="logo2.png" />
 								</Link>
