@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { Grommet, Box, Button, Text, grommet, Grid } from "grommet";
 import CustomTheme from "../../components/CustomTheme/CustomTheme";
+
+import MyForm from "../../components/myform/myform";
 const Contact = () => {
 	return (
 		<Grommet theme={CustomTheme} background="dark-2">
@@ -29,8 +31,10 @@ const Contact = () => {
 				>
 					<Box gridArea="contact">
 						<h1>Contact me</h1>
-						<h2>Email: Pmarinelli@ufl.edu</h2>
-						<h2>: Pmarinelli@ufl.edu</h2>
+						<p></p>
+						<Box background="white" pad="large" round>
+							<MyForm />
+						</Box>
 					</Box>
 					<Box gridArea="picture"></Box>
 				</Grid>

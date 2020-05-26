@@ -48,10 +48,10 @@ routes.map(({ path, index }) => {
 });
 console.log(currentPage);
 
-const ResponsiveGrid = ({ children, areas, ...props }) => {
+const ResponsiveGrid = ({ children, areas, style, ...props }) => {
 	const size = React.useContext(ResponsiveContext);
 	return (
-		<Grid areas={areas[size]} {...props}>
+		<Grid areas={areas[size]} style={style[size]} {...props}>
 			{children}
 		</Grid>
 	);
@@ -64,7 +64,7 @@ function App(props) {
 	};
 
 	return (
-		<div>
+		<Box height={{ max: "100%", min: "100%" }}>
 			<Grommet theme={CustomTheme} full>
 				<ResponsiveGrid
 					fill
@@ -91,6 +91,13 @@ function App(props) {
 							{ name: "sidebar", start: [0, 1], end: [0, 1] },
 							{ name: "main", start: [1, 1], end: [1, 1] },
 						],
+					}}
+					style={{
+						xxsmall: { position: "relative" },
+						xsmall: { position: "relative" },
+						small: { position: "relative" },
+						medium: { position: "fixed" },
+						large: { position: "fixed" },
 					}}
 				>
 					<Box
@@ -172,7 +179,7 @@ function App(props) {
             <Grommet >
     
   </Grommet> */}
-		</div>
+		</Box>
 	);
 }
 
