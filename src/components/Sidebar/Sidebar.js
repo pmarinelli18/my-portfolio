@@ -212,7 +212,7 @@ const SidebarNavigation = () => {
 								height="xxsmall"
 							>
 								<Link to={"/Home"}>
-									<Image fill src="logo2.png" />
+									<Image fill src="Artboard 1.png" />
 								</Link>
 							</Box>
 							<Button
