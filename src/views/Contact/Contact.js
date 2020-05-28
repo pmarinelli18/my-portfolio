@@ -1,13 +1,36 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Grommet, Box, Grid, Heading, Paragraph } from "grommet";
+import {
+	Grommet,
+	Box,
+	Grid,
+	Heading,
+	Paragraph,
+	ResponsiveContext,
+} from "grommet";
 
 import { Github, Linkedin, Twitter } from "grommet-icons";
 import CustomTheme from "../../components/CustomTheme/CustomTheme";
 
 import "./Contact.css";
-
 import MyForm from "../../components/myform/myform";
+
+const ResponsiveGrid = ({ children, areas, columns, rows, ...props }) => {
+	const size = React.useContext(ResponsiveContext);
+	return (
+		<Grid
+			areas={areas[size]}
+			// columns={columns[size]}
+			// rows={rows[size]}
+			columns={columns}
+			rows={rows}
+			{...props}
+		>
+			{children}
+		</Grid>
+	);
+};
+
 const Contact = () => {
 	return (
 		<Grommet theme={CustomTheme} background="dark-2" fill>
@@ -24,14 +47,32 @@ const Contact = () => {
 				//     "side": "all"
 				// }}
 			>
-				<Grid
+				<ResponsiveGrid
 					fill
-					areas={[
-						{ name: "contact", start: [0, 0], end: [0, 0] },
-						{ name: "picture", start: [1, 0], end: [1, 0] },
-					]}
-					columns={["flex", "flex"]}
-					rows={["flex"]}
+					columns={["50%", "50%"]}
+					rows={["flex", "flex"]}
+					areas={{
+						small: [
+							{ name: "picture", start: [0, 1], end: [1, 1] },
+							{ name: "contact", start: [0, 0], end: [1, 0] },
+						],
+						medium: [
+							{ name: "contact", start: [0, 0], end: [0, 0] },
+							{ name: "picture", start: [1, 0], end: [1, 0] },
+						],
+						large: [
+							{ name: "contact", start: [0, 0], end: [0, 0] },
+							{ name: "picture", start: [1, 0], end: [1, 0] },
+						],
+					}}
+					// columns={{
+					// 	small: [["fit"]],
+					// 	medium: [["flex", "flex"]],
+					// }}
+					// rows={{
+					// 	small: [["fit", "fit"]],
+					// 	medium: [["flex"]],
+					// }}
 					gap="small"
 				>
 					<Box gridArea="contact">
@@ -39,7 +80,7 @@ const Contact = () => {
 						<Paragraph>
 							Have a question, want to work together, or simply want to have a
 							chat? Feel free to leave me an e-mail at pmarinelli@ufl.edu or
-							simply fill out the form to the right and I will reply to you
+							simply fill out the form on this page and I will reply to you
 							soon!
 						</Paragraph>
 						<Grid
@@ -82,7 +123,7 @@ const Contact = () => {
 							<MyForm />
 						</Box>
 					</Box>
-				</Grid>
+				</ResponsiveGrid>
 				{/* </Box> */}
 			</Box>
 		</Grommet>

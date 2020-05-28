@@ -64,7 +64,7 @@ function App(props) {
 	};
 
 	return (
-		<Box height={{ max: "100%", min: "100%" }}>
+		<Box height={{ min: "100%" }}>
 			<Grommet theme={CustomTheme} full>
 				<ResponsiveGrid
 					fill
@@ -103,7 +103,8 @@ function App(props) {
 					<Box
 						gridArea="sidebar"
 						direction="row"
-						height={{ max: "100%", min: "100%" }}
+						height={{ min: "100%" }}
+						background="dark-2"
 					>
 						<Sidebar />
 					</Box>
@@ -119,7 +120,7 @@ function App(props) {
 						}}
 						background="dark-2"
 						gap="medium"
-						height={{ max: "100%", min: "100%" }}
+						height={{ min: "100%" }}
 						fill="vertical"
 					>
 						<Stack fill interactiveChild={i}>

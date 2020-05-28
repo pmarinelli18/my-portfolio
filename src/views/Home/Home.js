@@ -13,11 +13,28 @@ import {
 	Image,
 	Carousel,
 	Heading,
+	ResponsiveContext,
 } from "grommet";
 import CustomTheme from "../../components/CustomTheme/CustomTheme";
 import "./Home.css";
 
 import animationData from "../../vectors/name.json";
+
+const ResponsiveGrid = ({ children, areas, columns, rows, ...props }) => {
+	const size = React.useContext(ResponsiveContext);
+	return (
+		<Grid
+			areas={areas[size]}
+			// columns={columns[size]}
+			// rows={rows[size]}
+			columns={columns}
+			rows={rows}
+			{...props}
+		>
+			{children}
+		</Grid>
+	);
+};
 
 const Home = () => {
 	const Name = {
@@ -31,14 +48,24 @@ const Home = () => {
 	return (
 		<Grommet theme={CustomTheme} background="dark-2">
 			<Box pad="medium" margin="large">
-				<Grid
+				<ResponsiveGrid
 					fill
-					areas={[
-						{ name: "main", start: [0, 0], end: [0, 0] },
-						{ name: "picture", start: [1, 0], end: [1, 0] },
-					]}
-					columns={["flex", "flex"]}
-					rows={["flex"]}
+					columns={["50%", "50%"]}
+					rows={["flex", "flex"]}
+					areas={{
+						small: [
+							{ name: "picture", start: [0, 1], end: [1, 1] },
+							{ name: "main", start: [0, 0], end: [1, 0] },
+						],
+						medium: [
+							{ name: "main", start: [0, 0], end: [0, 0] },
+							{ name: "picture", start: [1, 0], end: [1, 0] },
+						],
+						large: [
+							{ name: "main", start: [0, 0], end: [0, 0] },
+							{ name: "picture", start: [1, 0], end: [1, 0] },
+						],
+					}}
 					gap="small"
 				>
 					<Box className="mainLeft" gridArea="main">
@@ -74,7 +101,7 @@ const Home = () => {
 							</Box>
 						</Box>
 					</Box>
-				</Grid>
+				</ResponsiveGrid>
 			</Box>
 		</Grommet>
 	);

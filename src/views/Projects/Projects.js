@@ -20,6 +20,7 @@ import {
 	Paragraph,
 	Tabs,
 	Tab,
+	ResponsiveContext,
 } from "grommet";
 
 import CustomTheme from "../../components/CustomTheme/CustomTheme";
@@ -41,104 +42,227 @@ const Projects = () => {
 	};
 
 	const onClose = () => setOpen(false);
-	const tabsf = [1, 2, 3, 4];
 	return (
-		<Box fill="vertical">
-			{/* <Grommet theme={CustomTheme} background="dark-2" fill = "vertical"> */}
-			<Box justify="center" gap="small" fill="vertical">
-				<Tabs activeIndex={index} onActive={onActive}>
-					{ProjectsList.map((item, i) => {
-						return (
-							<Tab title={"Page " + (i + 1)}>
-								<Box margin="small" align="center" fill="vertical">
-									<Grid
-										background="dark-2"
-										columns={{
-											count: 4,
-											size: "auto",
-										}}
-										rows={{
-											count: 2,
-											size: "medium",
-										}}
-										gap="medium"
-									>
-										{item.map((project, i) => {
-											return (
-												<Box
-													pad="medium"
-													align="center"
-													background={{ color: "white", opacity: "strong" }}
-													round
-													gap="small"
-													fill="vertical"
-												>
-													<Box height="xsmall" width="small">
-														<Image fit="contain" src={project.images[0]} />
-													</Box>
-													<Text>{project.title}</Text>
-													<Button label="Button" onClick={() => onOpen(i)} />
-												</Box>
-											);
-										})}
-									</Grid>
-								</Box>
-							</Tab>
-						);
-					})}
-				</Tabs>
-			</Box>
-			{open && (
-				<Layer
-					margin="small"
-					position="center"
-					modal="true"
-					onClickOutside={onClose}
-					onEsc={onClose}
-				>
-					<Box
-						flex={false}
-						direction="row"
-						justify="between"
-						pad={{ left: "small", right: "small", top: "xsmall" }}
-					>
-						<Heading level={3} margin="none">
-							{ProjectsList[index][popover].title}
-						</Heading>
-						<Button icon={<Close />} onClick={onClose} />
-					</Box>
-					<Box pad={{ left: "medium", right: "medium" }} width="large">
-						<Box
-							height="medium"
-							width="xlarge"
-							overflow="hidden"
-							pad={{ right: "large", left: "large" }}
-						>
-							<Carousel fill>
-								{ProjectsList[index][popover].images.map((picture, i) => {
-									return <Image fit="contain" src={picture} />;
+		<ResponsiveContext>
+			{(responsive) =>
+				responsive === "small" ? (
+					<Box fill="vertical">
+						{/* <Grommet theme={CustomTheme} background="dark-2" fill = "vertical"> */}
+						<Box justify="center" gap="small" fill="vertical">
+							<Box margin="small" align="center" fill="vertical">
+								{ProjectsList.map((item, i) => {
+									return (
+										<div>
+											{item.map((project, i) => {
+												return (
+													<Grid
+														background="dark-2"
+														columns={{
+															count: 1,
+															size: "auto",
+														}}
+														rows={{
+															size: "medium",
+														}}
+														gap="medium"
+														pad="small"
+													>
+														<Box
+															pad="medium"
+															align="center"
+															background={{
+																color: "white",
+																opacity: "strong",
+															}}
+															round
+															gap="small"
+															fill="vertical"
+														>
+															<Box height="xsmall" width="small">
+																<Image fit="contain" src={project.images[0]} />
+															</Box>
+															<Text>{project.title}</Text>
+															<Button label="More" onClick={() => onOpen(i)} />
+														</Box>
+													</Grid>
+												);
+											})}
+										</div>
+									);
 								})}
-							</Carousel>
+							</Box>
 						</Box>
-						<Paragraph fill="true">
-							{ProjectsList[index][popover].description}
-						</Paragraph>
-						<a target="_blank" href={ProjectsList[index][popover].link}>
-							<Button label="Source Code" />
-						</a>
-						<Box
-							as="footer"
-							gap="small"
-							direction="row"
-							align="center"
-							justify="end"
-							pad={{ top: "medium", bottom: "small" }}
-						></Box>
+						{open && (
+							<Layer
+								margin="small"
+								position="center"
+								modal="true"
+								onClickOutside={onClose}
+								onEsc={onClose}
+							>
+								<Box
+									flex={false}
+									direction="row"
+									justify="between"
+									pad={{ left: "small", right: "small", top: "xsmall" }}
+								>
+									<Heading level={3} margin="none">
+										{ProjectsList[index][popover].title}
+									</Heading>
+									<Button icon={<Close />} onClick={onClose} />
+								</Box>
+								<Box pad={{ left: "medium", right: "medium" }} width="large">
+									<Box
+										height="medium"
+										width="xlarge"
+										overflow="hidden"
+										pad={{ right: "large", left: "large" }}
+									>
+										<Carousel fill>
+											{ProjectsList[index][popover].images.map((picture, i) => {
+												return <Image fit="contain" src={picture} />;
+											})}
+										</Carousel>
+									</Box>
+									<Paragraph fill="true">
+										{ProjectsList[index][popover].description}
+									</Paragraph>
+									<a target="_blank" href={ProjectsList[index][popover].link}>
+										<Button label="Source Code" />
+									</a>
+									<Box
+										as="footer"
+										gap="small"
+										direction="row"
+										align="center"
+										justify="end"
+										pad={{ top: "medium", bottom: "small" }}
+									></Box>
+								</Box>
+							</Layer>
+						)}
+						{/* </Grommet> */}
 					</Box>
-				</Layer>
-			)}
-			{/* </Grommet> */}
-		</Box>
+				) : (
+					<Box className="middle">
+						{/* <Grommet theme={CustomTheme} background="dark-2" fill = "vertical"> */}
+						<Box justify="center" className="middle">
+							<Tabs
+								activeIndex={index}
+								onActive={onActive}
+								justify="center"
+								alignSelf="center"
+								flex
+							>
+								{ProjectsList.map((item, i) => {
+									return (
+										<Tab title={"Page " + (i + 1)}>
+											<Box
+												margin={{ bottom: "xlarge", top: "xsmall" }}
+												align="center"
+												fill="vertical"
+											>
+												<Grid
+													background="dark-2"
+													columns={{
+														count: 4,
+														size: "auto",
+													}}
+													rows={{
+														count: 2,
+														size: "medium",
+													}}
+													gap="small"
+												>
+													{item.map((project, i) => {
+														return (
+															<Box
+																pad="small"
+																align="center"
+																background={{
+																	color: "white",
+																	opacity: "strong",
+																}}
+																round
+																gap="none"
+															>
+																<Box height="xsmall" width="small">
+																	<Image
+																		fit="contain"
+																		src={project.images[0]}
+																	/>
+																</Box>
+																<Text size small>
+																	{project.title}
+																</Text>
+																<Button
+																	label="More"
+																	onClick={() => onOpen(i)}
+																/>
+															</Box>
+														);
+													})}
+												</Grid>
+											</Box>
+										</Tab>
+									);
+								})}
+							</Tabs>
+						</Box>
+						{open && (
+							<Layer
+								margin="small"
+								position="center"
+								modal="true"
+								onClickOutside={onClose}
+								onEsc={onClose}
+							>
+								<Box
+									flex={false}
+									direction="row"
+									justify="between"
+									pad={{ left: "small", right: "small", top: "xsmall" }}
+								>
+									<Heading level={3} margin="none">
+										{ProjectsList[index][popover].title}
+									</Heading>
+									<Button icon={<Close />} onClick={onClose} />
+								</Box>
+								<Box pad={{ left: "medium", right: "medium" }} width="large">
+									<Box
+										height="medium"
+										width="xlarge"
+										overflow="hidden"
+										pad={{ right: "large", left: "large" }}
+									>
+										<Carousel fill>
+											{ProjectsList[index][popover].images.map((picture, i) => {
+												return <Image fit="contain" src={picture} />;
+											})}
+										</Carousel>
+									</Box>
+									<Paragraph fill="true">
+										{ProjectsList[index][popover].description}
+									</Paragraph>
+									<a target="_blank" href={ProjectsList[index][popover].link}>
+										<Button label="Source Code" />
+									</a>
+									<Box
+										as="footer"
+										gap="small"
+										direction="row"
+										align="center"
+										justify="end"
+										pad={{ top: "medium", bottom: "small" }}
+									></Box>
+								</Box>
+							</Layer>
+						)}
+						{/* </Grommet> */}
+					</Box>
+				)
+			}
+		</ResponsiveContext>
 	);
 };
 

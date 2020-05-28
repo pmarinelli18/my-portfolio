@@ -1,7 +1,7 @@
 [
 	[
 		{
-			"title": "UF Department of Neurosergery Website",
+			"title": "Neurosergery Website",
 			"images": [
 				"FinalPhoto1.png",
 				"S20_7_Neuro6_1.gif",
@@ -18,7 +18,7 @@
 			"link": "https://github.com/pmarinelli18/SilentDiscoApp"
 		},
 		{
-			"title": "Text Adventure OOP Design",
+			"title": "Text Adventure Design",
 			"images": ["textadventure.png"],
 			"description": "Some description goes here",
 			"link": "https://docs.google.com/document/d/13_HJUcWRvp6wceIT5lGK1Ucv-kKCUDFbWZMEy43expw/edit?usp=sharing"
@@ -36,13 +36,13 @@
 			"link": "https://github.com/pmarinelli18/TPEDCoasterControlsFall2019"
 		},
 		{
-			"title": "Pascal Interpreter in Haskell",
+			"title": "Pascal Interpreter(Haskell)",
 			"images": ["PascalInHaskell.png"],
 			"description": "Some description goes here",
 			"link": "https://github.com/pmarinelli18/Project3Dobra"
 		},
 		{
-			"title": "Pascal Interpreter in Java",
+			"title": "Pascal Interpreter(Java)",
 			"images": ["antlr4_parse_tree2.png"],
 			"description": "Some description goes here",
 			"link": "https://github.com/Josequintas96/Proj2"

@@ -72,7 +72,7 @@ const FooterSidebarButton = ({ iconName, index }) => {
 				plain
 			>
 				{({ hover }) => (
-					<Box pad={{ vertical: "xsmall" }} align="center">
+					<Box pad={{ vertical: "xxsmall" }} align="center">
 						{footerIconsMap(hover ? "black" : "white")[index]}
 					</Box>
 				)}
@@ -82,7 +82,7 @@ const FooterSidebarButton = ({ iconName, index }) => {
 					<Box
 						animation="slideRight"
 						margin="xsmall"
-						pad="xsmall"
+						pad="xxsmall"
 						background={tooltipColor}
 						round={{ size: "medium", corner: "right" }}
 					>
@@ -95,7 +95,7 @@ const FooterSidebarButton = ({ iconName, index }) => {
 };
 
 const SidebarHeader = () => (
-	<Box pad="small">
+	<Box pad={{ left: "small", right: "small", top: "xsmall" }}>
 		<Box width="xxsmall" height="xxsmall">
 			<Link to={"/Home"}>
 				<Image fill src="Artboard 1.png" />
@@ -134,7 +134,8 @@ const SidebarButton = ({ iconName, index }) => {
 				plain
 			>
 				{({ hover }) => (
-					<Box pad={{ vertical: "small" }} align="center">
+					<Box pad={{ vertical: "xsmall" }} align="center">
+						{/* here */}
 						{iconsMap(hover ? "black" : "white")[index]}
 					</Box>
 				)}
@@ -143,8 +144,8 @@ const SidebarButton = ({ iconName, index }) => {
 				<Drop align={{ left: "right" }} target={ref.current} plain>
 					<Box
 						animation="slideRight"
-						margin="xsmall"
-						pad="small"
+						margin="xxsmall"
+						pad="xsmall"
 						background={tooltipColor}
 						round={{ size: "medium", corner: "right" }}
 					>
@@ -201,7 +202,7 @@ const SidebarNavigation = () => {
 					// 	</Stack>
 					// </div>
 					<Box width="full">
-						<Header background="brand" pad="medium" width="full">
+						<Header background="brand" pad="small" width="full">
 							<Box
 								width="full"
 								direction="row"
@@ -210,7 +211,6 @@ const SidebarNavigation = () => {
 								width="xxsmall"
 								height="xxsmall"
 							>
-								<Image fill src="0.jpg" />
 								<Link to={"/Home"}>
 									<Image fill src="logo2.png" />
 								</Link>
@@ -253,6 +253,7 @@ const SidebarNavigation = () => {
 						header={<SidebarHeader />}
 						footer={<SidebarFooter />}
 						pad="none"
+						gap="medium"
 					>
 						<Nav>
 							{pages.map((page, i) => {
