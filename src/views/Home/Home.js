@@ -78,18 +78,13 @@ const Home = () => {
 								<Button label="Contact Me" />
 							</Link>
 						</p>
-						<p></p>
-						<p></p>
 					</Box>
 					<Box gridArea="picture">
 						<Box
-							// style={{ maxWidth: "90%" }}
-
+							style={{ maxWidth: "95%" }}
+							alignSelf="center"
 							pad={{ left: "large", right: "large", bottom: "large" }}
 						>
-							<Box width="fill">
-								<Lottie options={Name} />
-							</Box>
 							<Box
 								overflow="hidden"
 								background={{ color: "brand", opacity: "80%" }}
@@ -101,6 +96,9 @@ const Home = () => {
 									<Image fill src="2.jpg" />
 									<Image fill src="3.jfif" />
 								</Carousel>
+							</Box>
+							<Box width="fill" pad="small">
+								<Lottie options={Name} />
 							</Box>
 						</Box>
 					</Box>
