@@ -220,6 +220,7 @@ const SidebarNavigation = () => {
 								icon={<MenuIcon color="white" />}
 							/>
 						</Header>
+						{/* <div></div> */}
 						<Collapsible direction="vertical" open={openNotification}>
 							<Box
 								fill
