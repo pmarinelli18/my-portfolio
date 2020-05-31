@@ -222,7 +222,7 @@ const SidebarNavigation = () => {
 						</Header>
 						<Collapsible direction="vertical" open={openNotification}>
 							<Box
-								flex
+								fill
 								width="medium"
 								background="light-2"
 								pad="small"
