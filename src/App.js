@@ -65,7 +65,7 @@ function App(props) {
 
 	return (
 		<Box height={{ min: "100%" }}>
-			<Grommet theme={CustomTheme} full>
+			<Grommet theme={CustomTheme} full background="dark-2">
 				<ResponsiveGrid
 					fill
 					rows={["auto", "flex"]}

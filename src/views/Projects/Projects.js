@@ -50,6 +50,7 @@ const Projects = () => {
 						{/* <Grommet theme={CustomTheme} background="dark-2" fill = "vertical"> */}
 						<Box justify="center" gap="small" fill="vertical">
 							<Box margin="small" align="center" fill="vertical">
+								<Heading>Projects</Heading>
 								{ProjectsList.map((item, i) => {
 									return (
 										<div>
@@ -147,6 +148,9 @@ const Projects = () => {
 					<Box className="middle">
 						{/* <Grommet theme={CustomTheme} background="dark-2" fill = "vertical"> */}
 						<Box justify="center" className="middle">
+							<Heading size="small" style={{ "line-height": "0px" }}>
+								Projects
+							</Heading>
 							<Tabs
 								activeIndex={index}
 								onActive={onActive}
@@ -192,10 +196,9 @@ const Projects = () => {
 																		src={project.images[0]}
 																	/>
 																</Box>
-																<Text size small>
-																	{project.title}
-																</Text>
+																<Text size="small">{project.title}</Text>
 																<Button
+																	size="xsmall"
 																	label="More"
 																	onClick={() => onOpen(i)}
 																/>

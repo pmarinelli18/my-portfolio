@@ -83,10 +83,13 @@ const Home = () => {
 					</Box>
 					<Box gridArea="picture">
 						<Box
-							style={{ maxWidth: "90%" }}
+							// style={{ maxWidth: "90%" }}
+
 							pad={{ left: "large", right: "large", bottom: "large" }}
 						>
-							<Lottie options={Name} />
+							<Box width="fill">
+								<Lottie options={Name} />
+							</Box>
 							<Box
 								overflow="hidden"
 								background={{ color: "brand", opacity: "80%" }}

@@ -234,7 +234,10 @@ const SidebarNavigation = () => {
 											to={page.extension}
 											onClick={() => setOpenNotification(!openNotification)}
 										>
-											{page.name}
+											<Box margin={{ left: "medium" }} pad="xsmall">
+												<Text size="medium">{page.name}</Text>
+											</Box>
+
 											{/* <SidebarButton
 												key={page.name}
 												iconName={page.name}
