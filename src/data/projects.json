@@ -104,7 +104,7 @@
 		},
 		{
 			"title": "Lend an Eye",
-			"images": ["LendAnEye.PNG", "lendaneye1.PNG", "LAE1.jpg"],
+			"images": ["lendaneye1.PNG", "LAE1.jpg"],
 			"description": "In modern day, its become increasingly difficult for some members of society to keep up with the ever-increasing density of news and information. This desktop application was designed to help inform individuals who find it difficult to read news articles like the elderly or people who dont speak the written language. (This project was awarded Best use of Google Cloud at Hack FSU 2019)",
 			"tech": "C#, Google Cloud Services, Google Language API, Microsoft Azure, and Bing API",
 			"links": [
