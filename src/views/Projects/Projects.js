@@ -48,50 +48,56 @@ const Projects = () => {
 				responsive === "small" ? (
 					<Box fill="vertical">
 						{/* <Grommet theme={CustomTheme} background="dark-2" fill = "vertical"> */}
-						<Box justify="center" gap="small" fill="vertical">
-							<Box margin="small" align="center" fill="vertical">
-								<Heading>Projects</Heading>
-								{ProjectsList.map((item, i) => {
-									return (
-										<div>
-											{item.map((project, i) => {
-												return (
-													<Grid
-														background="dark-2"
-														columns={{
-															count: 1,
-															size: "auto",
+						<Box
+							// justify="center"
+							// gap="small"
+							// fill="vertical"
+							// margin="small"
+							align="center"
+						>
+							{/* <Box  fill="vertical"> */}
+							<Heading>Projects</Heading>
+							{ProjectsList.map((item, i) => {
+								return (
+									<div>
+										{item.map((project, i) => {
+											return (
+												<Grid
+													background="dark-2"
+													columns={{
+														count: 1,
+														size: "auto",
+													}}
+													rows={{
+														size: "medium",
+													}}
+													gap="medium"
+													pad="small"
+												>
+													<Box
+														pad="medium"
+														align="center"
+														background={{
+															color: "white",
+															opacity: "strong",
 														}}
-														rows={{
-															size: "medium",
-														}}
-														gap="medium"
-														pad="small"
+														round
+														gap="small"
+														fill="vertical"
 													>
-														<Box
-															pad="medium"
-															align="center"
-															background={{
-																color: "white",
-																opacity: "strong",
-															}}
-															round
-															gap="small"
-															fill="vertical"
-														>
-															<Box height="xsmall" width="small">
-																<Image fit="contain" src={project.images[0]} />
-															</Box>
-															<Text>{project.title}</Text>
-															<Button label="More" onClick={() => onOpen(i)} />
+														<Box height="xsmall" width="small">
+															<Image fit="contain" src={project.images[0]} />
 														</Box>
-													</Grid>
-												);
-											})}
-										</div>
-									);
-								})}
-							</Box>
+														<Text>{project.title}</Text>
+														<Button label="More" onClick={() => onOpen(i)} />
+													</Box>
+												</Grid>
+											);
+										})}
+									</div>
+								);
+							})}
+							{/* </Box> */}
 						</Box>
 						{open && (
 							<Layer
@@ -112,25 +118,45 @@ const Projects = () => {
 									</Heading>
 									<Button icon={<Close />} onClick={onClose} />
 								</Box>
-								<Box pad={{ left: "medium", right: "medium" }} width="large">
-									<Box
-										height="medium"
-										width="xlarge"
-										overflow="hidden"
-										pad={{ right: "large", left: "large" }}
-									>
-										<Carousel fill>
-											{ProjectsList[index][popover].images.map((picture, i) => {
-												return <Image fit="contain" src={picture} />;
-											})}
-										</Carousel>
-									</Box>
+								<Box pad="xsmall">
+									<Carousel fill>
+										{ProjectsList[index][popover].images.map((picture, i) => {
+											return <Image fit="contain" src={picture} />;
+										})}
+									</Carousel>
+								</Box>
+								<Box pad="medium">
 									<Paragraph fill="true">
 										{ProjectsList[index][popover].description}
 									</Paragraph>
-									<a target="_blank" href={ProjectsList[index][popover].link}>
-										<Button label="Source Code" />
-									</a>
+									<Paragraph fill="true">
+										<Text>Technologies used: </Text>
+										{ProjectsList[index][popover].tech}
+									</Paragraph>
+									<Box align="center">
+										<Grid
+											rows={["xsmall", "xsmall"]}
+											columns={["small", "small"]}
+											gap="small"
+											areas={[
+												{ name: "1", start: [0, 1], end: [0, 1] },
+												{ name: "2", start: [0, 1], end: [0, 1] },
+											]}
+										>
+											{ProjectsList[index][popover].links.map((item, i) => {
+												return (
+													<a
+														gridArea={i}
+														target="_blank"
+														pad="small"
+														href={item.link}
+													>
+														<Button label={item.name} />
+													</a>
+												);
+											})}
+										</Grid>
+									</Box>
 									<Box
 										as="footer"
 										gap="small"
@@ -145,9 +171,9 @@ const Projects = () => {
 						{/* </Grommet> */}
 					</Box>
 				) : (
-					<Box className="middle">
+					<Box className="middle" fill>
 						{/* <Grommet theme={CustomTheme} background="dark-2" fill = "vertical"> */}
-						<Box justify="center" className="middle">
+						<Box className="middle" fill>
 							<Heading size="small" style={{ "line-height": "0px" }}>
 								Projects
 							</Heading>
@@ -162,7 +188,10 @@ const Projects = () => {
 									return (
 										<Tab title={"Page " + (i + 1)}>
 											<Box
-												margin={{ bottom: "xlarge", top: "xsmall" }}
+												margin={{
+													// bottom: "xsmall",
+													top: "xsmall",
+												}}
 												align="center"
 												fill="vertical"
 											>
@@ -247,17 +276,34 @@ const Projects = () => {
 									<Paragraph fill="true">
 										{ProjectsList[index][popover].description}
 									</Paragraph>
-									<a target="_blank" href={ProjectsList[index][popover].link}>
-										<Button label="Source Code" />
-									</a>
-									<Box
-										as="footer"
-										gap="small"
-										direction="row"
-										align="center"
-										justify="end"
-										pad={{ top: "medium", bottom: "small" }}
-									></Box>
+									<Paragraph fill="true">
+										<Text>Technologies used: </Text>
+										{ProjectsList[index][popover].tech}
+									</Paragraph>
+									<Box align="center">
+										<Grid
+											rows={["xsmall", "xxsmall"]}
+											columns={["small", "small"]}
+											gap="small"
+											areas={[
+												{ name: "1", start: [0, 1], end: [0, 1] },
+												{ name: "2", start: [0, 1], end: [0, 1] },
+											]}
+										>
+											{ProjectsList[index][popover].links.map((item, i) => {
+												return (
+													<a
+														gridArea={i}
+														target="_blank"
+														pad="small"
+														href={item.link}
+													>
+														<Button label={item.name} />
+													</a>
+												);
+											})}
+										</Grid>
+									</Box>
 								</Box>
 							</Layer>
 						)}

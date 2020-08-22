@@ -8,58 +8,125 @@
 				"S20_7_Neuro6_2.gif",
 				"S20_7_Neuro6_3.gif"
 			],
-			"description": "My team and I developed a WebApp for the UF Department of Neuroseurgery. The client wanted a site that could remind patients of their appointments and help them navigate to the garage. Using the MERN Stack",
-			"link": "https://github.com/AlyssaMarotta/Neuro6"
+			"description": "My team and I developed a web app for the UF Neurosurgery department to allow patients and admins to request, view, and add appointments. The app allows patients to create an account, view upcoming appointments and reminders, view contact and clinic location information, and request new appointments. The app also allows admins to create an account, view current patient and appointment information, approve appointments, and create new appointments. (You may loggon to the test site with the email: admin@admin.com and password: admin for admin or email: test@test.com and password: test for general user)",
+			"tech": "MongoDB, Express.js, React.js, Node.js, ANT Design, CRUD, Crypto, node-cron, Google Maps API, Mailgun and twilio",
+			"links": [
+				{
+					"name": "Source Code",
+					"link": "https://github.com/AlyssaMarotta/Neuro6"
+				},
+				{
+					"name": "Test Site",
+					"link": "http://neuro6.herokuapp.com/Home"
+				}
+			]
 		},
 		{
 			"title": "Silent Disco",
 			"images": ["SilentDiscoStart.png", "SilentDiscoHome.png"],
-			"description": "Some description goes here",
-			"link": "https://github.com/pmarinelli18/SilentDiscoApp"
+			"description": "My team and I developed the User interface of a mobile app that would allow users to listen to the same song simultaneously over different devices. We gathered data from surveys of potential users in order to find the most ideal layout.",
+			"tech": "react-native, react-navigation, ",
+			"links": [
+				{
+					"name": "Source Code",
+					"link": "https://github.com/pmarinelli18/SilentDiscoApp"
+				},
+				{
+					"name": "Video Demonstration",
+					"link": "https://www.youtube.com/watch?v=OR3A-i0Y12c&t=0s"
+				}
+			]
 		},
 		{
 			"title": "Text Adventure Design",
 			"images": ["textadventure.png"],
-			"description": "Some description goes here",
-			"link": "https://docs.google.com/document/d/13_HJUcWRvp6wceIT5lGK1Ucv-kKCUDFbWZMEy43expw/edit?usp=sharing"
+			"description": "My team and I developed the design of a OOP framework for Text Adventure video games. We incorporated object oriented programming patterns in places that made sense",
+			"tech": "N/A ",
+			"links": [
+				{
+					"name": "Google Doc",
+					"link": "https://docs.google.com/document/d/13_HJUcWRvp6wceIT5lGK1Ucv-kKCUDFbWZMEy43expw/edit?usp=sharing"
+				}
+			]
 		},
 		{
 			"title": "TPED Website",
 			"images": ["tpedwebsitehome.png"],
-			"description": "Some description goes here",
-			"link": "https://github.com/pmarinelli18/TPEDWebsite"
+			"description": "I am currently working on the website for the Theme Park Engineering and Design Club. I am using illustrator and After Affects to animate different rides including a coaster, a ferris wheel, and more! ",
+			"tech": "React.js, lottie.js, Envergreen-ui, Illustrator, After Affects ",
+			"links": [
+				{
+					"name": "Source Code",
+					"link": "https://github.com/pmarinelli18/TPEDWebsite"
+				}
+			]
 		},
 		{
 			"title": "TPED Coaster",
-			"images": ["TPEDCoasterDesign.PNG"],
-			"description": "Some description goes here",
-			"link": "https://github.com/pmarinelli18/TPEDCoasterControlsFall2019"
+			"images": [
+				"TPEDCoasterDesign.PNG",
+				"CoasterDesign.jpg",
+				"ChalkDesign.jpeg",
+				"ControlPanelDesign1.jpeg"
+			],
+			"description": " The Theme Park Engineering and Design Club is working on a small scale working roller coaster. My team is working on the controls for the coaster; We are programming an arduino to maintain block sections and dispatch trains.",
+			"tech": "Arduino, hardware including motors, sensors, switches, ect.",
+			"links": [
+				{
+					"name": "Source Code",
+					"link": "https://github.com/pmarinelli18/TPEDCoasterControlsFall2019"
+				}
+			]
 		},
 		{
 			"title": "Pascal Interpreter(Haskell)",
 			"images": ["PascalInHaskell.png"],
-			"description": "Some description goes here",
-			"link": "https://github.com/pmarinelli18/Project3Dobra"
+			"description": "In this project, I implement a similar programming language to pascal using Haskell. This program is written in functional programming in a tree like fashion",
+			"tech": "Haskell, Cabal, Forth ",
+			"links": [
+				{
+					"name": "Source Code",
+					"link": "https://github.com/pmarinelli18/Project3Dobra"
+				}
+			]
 		},
 		{
 			"title": "Pascal Interpreter(Java)",
 			"images": ["antlr4_parse_tree2.png"],
-			"description": "Some description goes here",
-			"link": "https://github.com/Josequintas96/Proj2"
+			"description": "In this project, I implement a similar programming language to pascal using Java. This program is written in functional programming in a tree like fashion",
+			"tech": "Java, Antlr",
+			"links": [
+				{
+					"name": "Source Code",
+					"link": "https://github.com/Josequintas96/Proj2"
+				}
+			]
 		},
 		{
 			"title": "Lend an Eye",
-			"images": ["lendaneye1.PNG"],
-			"description": "Some description goes here",
-			"link": "https://github.com/pmarinelli18/SilentDiscoApp"
+			"images": ["LendAnEye.PNG", "lendaneye1.PNG", "LAE1.jpg"],
+			"description": "In modern day, its become increasingly difficult for some members of society to keep up with the ever-increasing density of news and information. This desktop application was designed to help inform individuals who find it difficult to read news articles like the elderly or people who dont speak the written language. (This project was awarded Best use of Google Cloud at Hack FSU 2019)",
+			"tech": "C#, Google Cloud Services, Google Language API, Microsoft Azure, and Bing API",
+			"links": [
+				{
+					"name": "Source Code",
+					"link": "https://github.com/pmarinelli18/grape"
+				}
+			]
 		}
 	],
 	[
 		{
 			"title": "Twitter Tweet Tracker",
-			"images": ["NasaScreenshot.PNG"],
-			"description": "Some description goes here",
-			"link": "https://github.com/pmarinelli18/SilentDiscoApp"
+			"images": ["NasaScreenshot.PNG", "CnnTTT.jpg", "ElonMuskTTT.jpg"],
+			"description": "Twitter Tweet Tracker takes in tweet and follower data from individuals and generates a five-personality model, six emotion model, subjectivity bar, frequency table, and various tweet charts. This application is deisgned to identify at risk or unsable twitter users. Using word analysis and key context clues, we can create a model of a twitter user who might be experiencing distress and other abnormal emotional spikes. Because of the rapid nature of twitter, it can be hard for individuals to keep track of their friends when they need them the most. Thus, this application can help users in keeping up with their friends over larger periods of time.",
+			"tech": "C#, .netframework, restfull, tweetinvi",
+			"links": [
+				{
+					"name": "Source Code",
+					"link": "https://github.com/jaberrio/Toast2.0_SH19"
+				}
+			]
 		}
 	]
 ]

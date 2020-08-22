@@ -75,7 +75,7 @@ const Contact = () => {
 					// }}
 					gap="small"
 				>
-					<Box gridArea="contact">
+					<Box gridArea="contact" className="CenterContact">
 						<Heading>Let's Get In Touch</Heading>
 						<Paragraph>
 							Have a question, want to work together, or simply want to have a
@@ -112,6 +112,7 @@ const Contact = () => {
 						gridArea="picture"
 						className="Middle"
 						fill="vertical"
+						className="CenterContact"
 					>
 						<Box
 							justify="center"

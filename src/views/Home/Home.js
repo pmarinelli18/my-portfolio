@@ -6,6 +6,7 @@ import {
 	Button,
 	Text,
 	grommet,
+	Card,
 	Grid,
 	Box,
 	Header,
@@ -13,6 +14,7 @@ import {
 	Image,
 	Carousel,
 	Heading,
+	Distribution,
 	ResponsiveContext,
 } from "grommet";
 import CustomTheme from "../../components/CustomTheme/CustomTheme";
@@ -27,8 +29,8 @@ const ResponsiveGrid = ({ children, areas, columns, rows, ...props }) => {
 			areas={areas[size]}
 			// columns={columns[size]}
 			// rows={rows[size]}
-			columns={columns}
-			rows={rows}
+			columns={columns} // this is new
+			rows={rows} //this is new
 			{...props}
 		>
 			{children}
@@ -47,16 +49,30 @@ const Home = () => {
 	};
 	return (
 		<Grommet theme={CustomTheme} background="dark-2">
-			<Box pad="medium" margin="large">
-				<ResponsiveGrid
-					fill
+			<Box pad="medium" margin="large" maxHeight="100%">
+				{/* <Grid
 					columns={["50%", "50%"]}
 					rows={["flex", "flex"]}
+					responsive="true"
+					areas={[
+						{ name: "main", start: [0, 0], end: [0, 0] },
+						{ name: "picture", start: [1, 0], end: [1, 0] },
+					]}
+				> */}
+				<ResponsiveGrid
+					fill //THis is new
+					columns={["50%", "50%"]}
+					rows={["flex", "flex"]}
+					//responsive="true"
 					areas={{
 						small: [
 							{ name: "picture", start: [0, 1], end: [1, 1] },
 							{ name: "main", start: [0, 0], end: [1, 0] },
 						],
+						// small: [
+						// 	{ name: "main", start: [0, 0], end: [0, 0] },
+						// 	{ name: "picture", start: [1, 0], end: [1, 0] },
+						// ],
 						medium: [
 							{ name: "main", start: [0, 0], end: [0, 0] },
 							{ name: "picture", start: [1, 0], end: [1, 0] },
@@ -69,7 +85,9 @@ const Home = () => {
 					gap="small"
 				>
 					<Box className="mainLeft" gridArea="main">
-						<Heading margin="xsmall">Hi, I'm Peyton</Heading>
+						<Heading alignSelf="center" margin="xsmall">
+							Hi, I'm Peyton
+						</Heading>
 						<Paragraph alignSelf="center" margin="xsmall">
 							A Software Developer based in Florida
 						</Paragraph>
@@ -78,31 +96,38 @@ const Home = () => {
 								<Button label="Contact Me" />
 							</Link>
 						</p>
+						<p></p>
+						<p></p>
+						<p></p>
+						<p></p>
 					</Box>
 					<Box gridArea="picture">
 						<Box
-							style={{ maxWidth: "95%" }}
+							style={{ maxWidth: "100%", maxHeight: "100%" }}
 							alignSelf="center"
-							pad={{ left: "large", right: "large", bottom: "large" }}
+							pad={{ left: "large", right: "large", bottom: "xlarge" }}
 						>
 							<Box
 								overflow="hidden"
 								background={{ color: "brand", opacity: "80%" }}
+								width="medium"
+								// style={{ maxHeight: "10px" }}
 								pad="xsmall"
 							>
 								<Carousel fill controls={false} play={5000}>
-									<Image fill src="0.jpg" />
-									<Image fill src="1.jpeg" />
-									<Image fill src="2.jpg" />
-									<Image fill src="3.jfif" />
+									<Image fit="contain" fill src="0.jpg" />
+									<Image fit="contain" fill src="1.jpeg" />
+									<Image fit="contain" fill src="2.jpg" />
+									<Image fit="contain" fill src="3.jfif" />
 								</Carousel>
 							</Box>
-							<Box width="fill" pad="small">
+							<Box width="fill" pad="medium">
 								<Lottie options={Name} />
 							</Box>
 						</Box>
 					</Box>
 				</ResponsiveGrid>
+				{/* </Grid> */}
 			</Box>
 		</Grommet>
 	);

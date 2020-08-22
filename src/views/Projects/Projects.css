@@ -1,6 +1,9 @@
 .middle {
+    align-self: center;
     align-content: center;
     vertical-align: middle;
     align-items: center;
-    align-self: center;
+}
+.verticleCenter {
+    align-items: center;
 }

@@ -22,6 +22,7 @@ import {
 	Stack,
 	Grid,
 	ResponsiveContext,
+	Main,
 } from "grommet";
 
 import CustomTheme from "./components/CustomTheme/CustomTheme";
@@ -65,6 +66,7 @@ function App(props) {
 
 	return (
 		<Box height={{ min: "100%" }}>
+			{/* <Box> */}
 			<Grommet theme={CustomTheme} full background="dark-2">
 				<ResponsiveGrid
 					fill
@@ -108,7 +110,20 @@ function App(props) {
 					>
 						<Sidebar />
 					</Box>
-
+					{/* <Main
+						gridArea="main"
+						direction="row-responsive"
+						justify="center"
+						align="center"
+						pad={{
+							left: "xlarge",
+							right: "xlarge",
+						}}
+						background="dark-2"
+						gap="medium"
+						height={{ min: "100%" }}
+						// fill="vertical"
+					> */}
 					<Box
 						gridArea="main"
 						direction="row-responsive"
@@ -145,6 +160,7 @@ function App(props) {
 								);
 							})}
 						</Stack>
+						{/* </Main> */}
 					</Box>
 
 					{/* <SwitchTransition mode={"out-in"}>
