@@ -12,39 +12,39 @@ const CustomTheme = {
 				dark: "#60528E", //"#4B898C"  //#F26A44 #462066   purple: "#60528E"
 			},
 			background: {
-				dark: "#000000", //"#111111"
+				dark: "#F1F0FF", //"#111111"
 				light: "#F1F0FF", //#99A0AA    puprle: "#F1F0FF"
 			},
 			"background-back": {
-				dark: "#000000", //"#111111"
+				dark: "#FAF6D2", //"#111111"
 				light: "#FAF6D2", //"#EEEEEE"
 			},
 			"background-front": {
-				dark: "#000000", //"#222222"
+				dark: "#FFFFFF", //"#222222"
 				light: "#FFFFFF", //"#FFFFFF"
 			},
 			"background-contrast": {
-				dark: "#FFFFFF11", //"#FFFFFF11"
+				dark: "#11111111", //"#FFFFFF11"
 				light: "#11111111", //"#11111111"
 			},
 			text: {
-				dark: "#EEEEEE",
+				dark: "#333333", //"#EEEEEE"
 				light: "#333333",
 			},
 			"text-strong": {
-				dark: "#FFFFFF",
+				dark: "#000000", //"#FFFFFF"
 				light: "#000000",
 			},
 			"text-weak": {
-				dark: "#CCCCCC",
+				dark: "#444444", //"#CCCCCC"
 				light: "#444444",
 			},
 			"text-xweak": {
-				dark: "#999999",
+				dark: "#666666", //"#999999",
 				light: "#666666",
 			},
 			border: {
-				dark: "#444444", //"#444444"
+				dark: "#CCCCCC", //"#444444"
 				light: "#CCCCCC", //"#CCCCCC"
 			},
 			control: "brand",
