@@ -127,6 +127,22 @@
 					"link": "https://github.com/jaberrio/Toast2.0_SH19"
 				}
 			]
+		},
+		{
+			"title": "Old Projects",
+			"images": ["minesweeper.png", "thedragondailyaug9page1.png"],
+			"description": "Some older projects I worked on in high school and my first years of college include developing the Stranahan High School website, Creating the Stranahan High School Newsletter, developing the idea and an early prototype for a mobile detention recorder, developing the idea for a visual announcements that can be accessed online, developing a business to undercut the compition for large scale printing by working in house within the high school, and lastly the redevelopement of the computer game minesweeper. (Many things have changed from the High School Website although the format still remains the same)",
+			"tech": "C++, SFML",
+			"links": [
+				{
+					"name": "High School Projects",
+					"link": "https://fixingstranahanproblems.weebly.com/"
+				},
+				{
+					"name": "Minesweeper Source Code",
+					"link": "https://github.com/pmarinelli18/Minesweeper"
+				}
+			]
 		}
 	]
 ]

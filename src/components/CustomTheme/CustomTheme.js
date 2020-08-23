@@ -4,7 +4,7 @@ const CustomTheme = {
 	name: "my theme",
 	rounding: 4,
 	spacing: 100, //24
-	defaultMode: "light",
+	defaultMode: "dark",
 	global: {
 		colors: {
 			brand: {
@@ -28,7 +28,7 @@ const CustomTheme = {
 				light: "#11111111", //"#11111111"
 			},
 			text: {
-				dark: "#333333", //"#EEEEEE"
+				dark: "#EEEEEE", //"#EEEEEE"
 				light: "#333333",
 			},
 			"text-strong": {
