@@ -57,7 +57,7 @@ const SidebarFooter = () => (
 
 const FooterSidebarButton = ({ iconName, index }) => {
 	const [over, setOver] = useState();
-	const tooltipColor = { color: "accent-3", opacity: 0.9 };
+	const tooltipColor = { color: "#c5bce5", opacity: 0.9 };
 
 	const ref = useRef();
 	return (
@@ -119,7 +119,7 @@ const iconsMap = (color) => [
 
 const SidebarButton = ({ iconName, index }) => {
 	const [over, setOver] = useState();
-	const tooltipColor = { color: "accent-3", opacity: 0.9 };
+	const tooltipColor = { color: "#c5bce5", opacity: 0.9 };
 
 	const ref = useRef();
 	return (
@@ -235,7 +235,7 @@ const SidebarNavigation = () => {
 											to={page.extension}
 											onClick={() => setOpenNotification(!openNotification)}
 										>
-											<Box margin={{ left: "medium" }} pad="xsmall">
+											<Box margin={{ left: "medium" }} pad="small">
 												<Text alignSelf="end" size="medium">
 													{page.name}
 												</Text>
