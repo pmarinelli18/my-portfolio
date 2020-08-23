@@ -33,8 +33,8 @@ const ResponsiveGrid = ({ children, areas, columns, rows, ...props }) => {
 
 const Contact = () => {
 	return (
-		<Grommet theme={CustomTheme} background="dark-2" fill>
-			{/* <Grommet theme={CustomTheme} background="dark-2" full > */}
+		<Grommet theme={CustomTheme} fill>
+			{/* <Grommet theme={CustomTheme} background="dark-2" fill> */}
 			{/* <Box fill ="vertical" > */}
 			<Box
 				pad="medium"
@@ -94,16 +94,16 @@ const Contact = () => {
 							rows={["flex"]}
 						>
 							<a target="_blank" href={"https://github.com/pmarinelli18"}>
-								<Github gridArea="github" color={"white"} />
+								<Github gridArea="github" color={"brand"} />
 							</a>
 							<a
 								target="_blank"
 								href={"https://www.linkedin.com/in/peyton-marinelli-b93a0275"}
 							>
-								<Linkedin gridArea="linedin" color={"white"} />
+								<Linkedin gridArea="linedin" color={"brand"} />
 							</a>
 							<a target="_blank" href={"https://twitter.com/pmarinelli18"}>
-								<Twitter gridArea="twitter" color={"white"} />
+								<Twitter gridArea="twitter" color={"brand"} />
 							</a>
 						</Grid>
 					</Box>

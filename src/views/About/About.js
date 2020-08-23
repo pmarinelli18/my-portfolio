@@ -31,7 +31,8 @@ const ResponsiveGrid = ({ children, areas, columns, rows, ...props }) => {
 
 const About = () => {
 	return (
-		<Grommet theme={CustomTheme} background="dark-2">
+		// <Grommet theme={CustomTheme} background="dark-2">
+		<Grommet theme={CustomTheme}>
 			<Box pad="medium" margin="large" maxHeight="100%">
 				{/* <Box pad="medium" margin="large"> */}
 				<Box>

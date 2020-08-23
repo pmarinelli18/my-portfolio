@@ -21,6 +21,7 @@ import CustomTheme from "../../components/CustomTheme/CustomTheme";
 import "./Home.css";
 
 import animationData from "../../vectors/name.json";
+import animationDataBlack from "../../vectors/nameBlack.json";
 
 const ResponsiveGrid = ({ children, areas, columns, rows, ...props }) => {
 	const size = React.useContext(ResponsiveContext);
@@ -47,8 +48,17 @@ const Home = () => {
 			preserveAspectRatio: "xMidYMid slice",
 		},
 	};
+	const NameBlack = {
+		loop: false,
+		autoplay: true,
+		animationData: animationDataBlack,
+		rendererSettings: {
+			preserveAspectRatio: "xMidYMid slice",
+		},
+	};
 	return (
-		<Grommet theme={CustomTheme} background="dark-2">
+		// <Grommet theme={CustomTheme} background="dark-2">
+		<Grommet theme={CustomTheme}>
 			<Box pad="medium" margin="large" maxHeight="100%">
 				{/* <Grid
 					columns={["50%", "50%"]}
@@ -122,7 +132,7 @@ const Home = () => {
 								</Carousel>
 							</Box>
 							<Box width="fill" pad="medium">
-								<Lottie options={Name} />
+								<Lottie options={NameBlack} />
 							</Box>
 						</Box>
 					</Box>

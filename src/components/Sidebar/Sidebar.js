@@ -98,7 +98,7 @@ const SidebarHeader = () => (
 	<Box pad={{ left: "small", right: "small", top: "xsmall" }}>
 		<Box width="xxsmall" height="xxsmall">
 			<Link to={"/Home"}>
-				<Image fill src="Artboard 1.png" />
+				<Image fill src="Logo3.png" />
 			</Link>
 		</Box>
 	</Box>
@@ -212,7 +212,7 @@ const SidebarNavigation = () => {
 								height="xxsmall"
 							>
 								<Link to={"/Home"}>
-									<Image fill src="Artboard 1.png" />
+									<Image fill src="Logo3.png" />
 								</Link>
 							</Box>
 							<Button
@@ -225,7 +225,7 @@ const SidebarNavigation = () => {
 							<Box
 								fill
 								width="medium"
-								background="light-2"
+								background="#c5bce5"
 								pad="small"
 								elevation="small"
 							>
@@ -236,9 +236,10 @@ const SidebarNavigation = () => {
 											onClick={() => setOpenNotification(!openNotification)}
 										>
 											<Box margin={{ left: "medium" }} pad="xsmall">
-												<Text size="medium">{page.name}</Text>
+												<Text alignSelf="end" size="medium">
+													{page.name}
+												</Text>
 											</Box>
-
 											{/* <SidebarButton
 												key={page.name}
 												iconName={page.name}

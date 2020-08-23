@@ -63,7 +63,7 @@ const Projects = () => {
 										{item.map((project, i) => {
 											return (
 												<Grid
-													background="dark-2"
+													// background="dark-2"
 													columns={{
 														count: 1,
 														size: "auto",
