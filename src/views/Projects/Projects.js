@@ -36,7 +36,12 @@ const Projects = () => {
 
 	const onActive = (nextIndex) => setIndex(nextIndex);
 
-	const onOpen = (i, j) => {
+	const onOpen = (i) => {
+		setPopover(i);
+		setOpen(true);
+	};
+
+	const onOpenMobile = (i, j) => {
 		setPopover(i);
 		setIndex(j);
 		setOpen(true);
@@ -90,7 +95,10 @@ const Projects = () => {
 															<Image fit="contain" src={project.images[0]} />
 														</Box>
 														<Text>{project.title}</Text>
-														<Button label="More" onClick={() => onOpen(i, j)} />
+														<Button
+															label="More"
+															onClick={() => onOpenMobile(i, j)}
+														/>
 													</Box>
 												</Grid>
 											);
