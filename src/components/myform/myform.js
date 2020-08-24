@@ -24,7 +24,7 @@ export default class MyForm extends React.Component {
 				<FormField label="Email" name="email" required>
 					<TextInput name="email" type="email" />
 				</FormField>
-				<FormField label="Message" name="message">
+				<FormField label="Message" name="message" required>
 					<TextArea name="message" />
 				</FormField>
 				{/* <label>Email:</label>

@@ -1,0 +1,66 @@
+[
+	[
+		{
+			"skill": "C++"
+		},
+		{
+			"skill": "C#"
+		},
+		{
+			"skill": "Java"
+		},
+		{
+			"skill": "Haskell"
+		}
+	],
+	[
+		{
+			"skill": "Git"
+		},
+		{
+			"skill": "Javascript"
+		},
+		{
+			"skill": "MongoDB"
+		},
+		{
+			"skill": "MySQL"
+		}
+	],
+	[
+		{
+			"skill": "SQL"
+		},
+		{
+			"skill": "React"
+		},
+		{
+			"skill": "Express"
+		},
+		{
+			"skill": "Node.js"
+		}
+	],
+	[
+		{
+			"skill": "HTML"
+		},
+		{
+			"skill": "react-native"
+		},
+		{
+			"skill": "Illustrator"
+		}
+	],
+	[
+		{
+			"skill": "After Affects"
+		},
+		{
+			"skill": "Auto Cad"
+		},
+		{
+			"skill": "Arduino"
+		}
+	]
+]
