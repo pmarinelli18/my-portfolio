@@ -36,8 +36,9 @@ const Projects = () => {
 
 	const onActive = (nextIndex) => setIndex(nextIndex);
 
-	const onOpen = (i) => {
+	const onOpen = (i, j) => {
 		setPopover(i);
+		setIndex(j);
 		setOpen(true);
 	};
 
@@ -57,7 +58,7 @@ const Projects = () => {
 						>
 							{/* <Box  fill="vertical"> */}
 							<Heading>Projects</Heading>
-							{ProjectsList.map((item, i) => {
+							{ProjectsList.map((item, j) => {
 								return (
 									<div>
 										{item.map((project, i) => {
@@ -89,7 +90,7 @@ const Projects = () => {
 															<Image fit="contain" src={project.images[0]} />
 														</Box>
 														<Text>{project.title}</Text>
-														<Button label="More" onClick={() => onOpen(i)} />
+														<Button label="More" onClick={() => onOpen(i, j)} />
 													</Box>
 												</Grid>
 											);

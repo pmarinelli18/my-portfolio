@@ -222,13 +222,7 @@ const SidebarNavigation = () => {
 						</Header>
 						{/* <div></div> */}
 						<Collapsible direction="vertical" open={openNotification}>
-							<Box
-								fill
-								width="medium"
-								background="#c5bce5"
-								pad="small"
-								elevation="small"
-							>
+							<Box fill background="#c5bce5" pad="small" elevation="small">
 								{pages.map((page, i) => {
 									return (
 										<Link

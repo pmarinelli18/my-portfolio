@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useContext } from "react";
 import {
 	Grommet,
 	Button,
@@ -31,6 +31,7 @@ const ResponsiveGrid = ({ children, areas, columns, rows, ...props }) => {
 };
 
 const About = () => {
+	const size = useContext(ResponsiveContext);
 	return (
 		// <Grommet theme={CustomTheme} background="dark-2">
 		<Grommet theme={CustomTheme}>
@@ -100,8 +101,38 @@ const About = () => {
 									]}
 								/> */}
 								<Box>
-									{SkillsList.map((item, i) => {
+									{/* <Grid columns={size !== "small" ? "small" : "100%"}>
+										{SkillsList.map((item, index) => (
+											<Box
+												margin="xsmall"
+												pad="small"
+												background="brand"
+												key={index}
+											>
+												{item.skill}
+											</Box>
+										))}
+									</Grid> */}
+									<Box direction="row" wrap="true">
+										{SkillsList.map((item, i) => {
+											return (
+												<Box
+													id={i}
+													margin="xsmall"
+													pad="small"
+													background="brand"
+													wrap="true"
+												>
+													{item.skill}
+												</Box>
+											);
+										})}
+									</Box>
+
+									{/* {SkillsList.map((item, i) => {
 										return (
+											
+											
 											<Box direction="row">
 												{item.map((item2, j) => {
 													return (
@@ -118,7 +149,7 @@ const About = () => {
 												})}
 											</Box>
 										);
-									})}
+									})} */}
 									{/* <Box direction="row">
 										<Box
 											id="3"
