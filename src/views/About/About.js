@@ -1,4 +1,5 @@
 import React, { useRef, useState, useContext } from "react";
+import { Link } from "react-router-dom";
 import {
 	Grommet,
 	Button,
@@ -74,6 +75,11 @@ const About = () => {
 								I work on more projects. If you wish to get in contact with me,
 								my contact information click the link below!
 							</Paragraph>
+							<Box alignSelf="center" pad="small">
+								<Link to={"/contact"}>
+									<Button label="Contact Me" />
+								</Link>
+							</Box>
 							<Box alignSelf="center">
 								<a href={"resume20-1-17.pdf"} target="_blank">
 									<Button label="Resume" />
