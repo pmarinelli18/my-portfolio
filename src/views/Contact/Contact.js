@@ -93,16 +93,25 @@ const Contact = () => {
 							columns={["xsmall", "xsmall", "xsmall"]}
 							rows={["flex"]}
 						>
-							<a target="_blank" href={"https://github.com/pmarinelli18"}>
+							<a
+								align="center"
+								target="_blank"
+								href={"https://github.com/pmarinelli18"}
+							>
 								<Github gridArea="github" color={"brand"} />
 							</a>
 							<a
+								align="center"
 								target="_blank"
 								href={"https://www.linkedin.com/in/peyton-marinelli-b93a0275"}
 							>
 								<Linkedin gridArea="linedin" color={"brand"} />
 							</a>
-							<a target="_blank" href={"https://twitter.com/pmarinelli18"}>
+							<a
+								align="center"
+								target="_blank"
+								href={"https://twitter.com/pmarinelli18"}
+							>
 								<Twitter gridArea="twitter" color={"brand"} />
 							</a>
 						</Grid>

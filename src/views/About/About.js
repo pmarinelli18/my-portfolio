@@ -69,7 +69,7 @@ const About = () => {
 							<Paragraph alignSelf="center">
 								I am a Computer Science Engineering student at the University of
 								Florida. I like challenging myself and finding ways to improve
-								the lives of people around me. This has lead me to participate
+								the lives of people around me. This has led me to participate
 								in hackathons, interesting clubs, and projects of my own. This
 								site will never be completed, it will continue to be updated as
 								I work on more projects. If you wish to get in contact with me,
