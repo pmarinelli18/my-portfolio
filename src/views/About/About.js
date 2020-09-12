@@ -69,11 +69,10 @@ const About = () => {
 							<Paragraph alignSelf="center">
 								I am a Computer Science Engineering student at the University of
 								Florida. I like challenging myself and finding ways to improve
-								the lives of people around me. This has led me to participate
-								in hackathons, interesting clubs, and projects of my own. This
-								site will never be completed, it will continue to be updated as
-								I work on more projects. If you wish to get in contact with me,
-								my contact information click the link below!
+								the lives of people around me. This has led me to participate in
+								hackathons, interesting clubs, and projects of my own. I will
+								continue to update this site as I work on more projects. If you
+								wish to get in contact with me, click the link below!
 							</Paragraph>
 							<Box alignSelf="center" pad="small">
 								<Link to={"/contact"}>
@@ -81,7 +80,7 @@ const About = () => {
 								</Link>
 							</Box>
 							<Box alignSelf="center">
-								<a href={"resume20-1-17.pdf"} target="_blank">
+								<a href={"resume20-9-12.pdf"} target="_blank">
 									<Button label="Resume" />
 								</a>
 							</Box>
