@@ -48,6 +48,7 @@ const Home = () => {
 			preserveAspectRatio: "xMidYMid slice",
 		},
 	};
+
 	const NameBlack = {
 		loop: false,
 		autoplay: true,
