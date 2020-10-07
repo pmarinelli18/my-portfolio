@@ -66,18 +66,6 @@
 			]
 		},
 		{
-			"title": "TPED Website",
-			"images": ["tpedwebsitehome.png"],
-			"description": "I am currently working on the website for the Theme Park Engineering and Design Club. I am using illustrator and After Affects to animate different rides including a coaster, a ferris wheel, and more! ",
-			"tech": "React.js, lottie.js, Envergreen-ui, Illustrator, After Affects ",
-			"links": [
-				{
-					"name": "Source Code",
-					"link": "https://github.com/pmarinelli18/TPEDWebsite"
-				}
-			]
-		},
-		{
 			"title": "TPED Coaster",
 			"images": [
 				"TPEDCoasterDesign.PNG",
@@ -107,6 +95,18 @@
 			]
 		},
 		{
+			"title": "Pascal Interpreter(Java)",
+			"images": ["antlr4_parse_tree2.png"],
+			"description": "In this project, I implement a similar programming language to pascal using Java. This program is written in functional programming in a tree like fashion",
+			"tech": "Java, Antlr",
+			"links": [
+				{
+					"name": "Source Code",
+					"link": "https://github.com/Josequintas96/Proj2"
+				}
+			]
+		},
+		{
 			"title": "Lend an Eye",
 			"images": ["lendaneye1.PNG", "LAE1.jpg"],
 			"description": "In modern day, its become increasingly difficult for some members of society to keep up with the ever-increasing density of news and information. This desktop application was designed to help inform individuals who find it difficult to read news articles like the elderly or people who dont speak the written language. (This project was awarded Best use of Google Cloud at Hack FSU 2019)",
@@ -120,18 +120,6 @@
 		}
 	],
 	[
-		{
-			"title": "Pascal Interpreter(Java)",
-			"images": ["antlr4_parse_tree2.png"],
-			"description": "In this project, I implement a similar programming language to pascal using Java. This program is written in functional programming in a tree like fashion",
-			"tech": "Java, Antlr",
-			"links": [
-				{
-					"name": "Source Code",
-					"link": "https://github.com/Josequintas96/Proj2"
-				}
-			]
-		},
 		{
 			"title": "Twitter Tweet Tracker",
 			"images": ["NasaScreenshot.PNG", "CnnTTT.jpg", "ElonMuskTTT.jpg"],
