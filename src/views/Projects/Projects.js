@@ -145,21 +145,17 @@ const Projects = () => {
 									<Box align="center">
 										<Grid
 											rows={["xsmall", "xsmall"]}
-											columns={["small", "small"]}
-											gap="small"
+											columns={["small", "small", "small"]}
+											gap="xsmall"
 											areas={[
 												{ name: "1", start: [0, 1], end: [0, 1] },
 												{ name: "2", start: [0, 1], end: [0, 1] },
+												{ name: "3", start: [0, 1], end: [0, 1] },
 											]}
 										>
 											{ProjectsList[index][popover].links.map((item, i) => {
 												return (
-													<a
-														gridArea={i}
-														target="_blank"
-														pad="small"
-														href={item.link}
-													>
+													<a gridArea={i} target="_blank" href={item.link}>
 														<Button label={item.name} />
 													</a>
 												);
@@ -292,11 +288,12 @@ const Projects = () => {
 									<Box align="center">
 										<Grid
 											rows={["xsmall", "xxsmall"]}
-											columns={["small", "small"]}
+											columns={["small", "small", "small"]}
 											gap="small"
 											areas={[
 												{ name: "1", start: [0, 1], end: [0, 1] },
 												{ name: "2", start: [0, 1], end: [0, 1] },
+												{ name: "3", start: [0, 1], end: [0, 1] },
 											]}
 										>
 											{ProjectsList[index][popover].links.map((item, i) => {

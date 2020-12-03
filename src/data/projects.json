@@ -20,6 +20,10 @@
 				{
 					"name": "Download Executable",
 					"link": "SoverignSkies.exe"
+				},
+				{
+					"name": "Demo",
+					"link": "https://www.youtube.com/watch?v=4lquB7gf3s8&feature=youtu.be"
 				}
 			]
 		},
@@ -102,6 +106,10 @@
 				{
 					"name": "Source Code",
 					"link": "https://github.com/pmarinelli18/TPEDCoasterControlsFall2019"
+				},
+				{
+					"name": "Design Team Website",
+					"link": "https://gatortped.wixsite.com/home/blank-page-4"
 				}
 			]
 		},
