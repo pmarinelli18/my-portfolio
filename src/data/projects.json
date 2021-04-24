@@ -1,6 +1,33 @@
 [
 	[
-		
+		{
+			"title": "Interactive Battleship",
+			"images": [
+				"InteractiveBattleship.png",
+				"InteractiveBattleshipPhysical.jpg",
+				"InteractiveBattleshipHome.jpg",
+				"InteractiveBattleshipCannonMinigame.jpg",
+				"InteractiveBattleshipHackingMinigame.jpg",
+				"InteractiveBattleshipPhysical2.jpg",
+				"InteractiveBattleshipBoat.jpg"
+			],
+			"description": "Interactive battleship is an immersive 2-player battleship game experience. It involves a mobile application where users will complete tasks and interact with the game and a physical battleship set that is used to show the state of the game and immerse the user into the battle. (01/2021 - 05/2021)",
+			"tech": "Raspberry Pi, GoLang, C#, Unity, Python, TCP, MySQL",
+			"links": [
+				{
+					"name": "Server/Physical Source Code",
+					"link": "https://github.com/pmarinelli18/SeniorDesign"
+				},
+				{
+					"name": "Mobile App Source Code",
+					"link": "https://github.com/pmarinelli18/BattleshipApp"
+				},
+				{
+					"name": "Presentation/Demo",
+					"link": "https://www.youtube.com/watch?v=RmgGLRsu9t4"
+				}
+			]
+		},
 		{
 			"title": "Soverign Skies",
 			"images": [
@@ -66,7 +93,7 @@
 			]
 		},
 		{
-			"title": "Neurosergery Website",
+			"title": "Neurosurgery Website",
 			"images": [
 				"FinalPhoto1.png",
 				"S20_7_Neuro6_1.gif",
@@ -103,18 +130,6 @@
 			]
 		},
 		{
-			"title": "Text Adventure Design",
-			"images": ["textadventure.png"],
-			"description": "My team and I developed the design of a OOP framework for Text Adventure video games. We incorporated object oriented programming patterns in places that made sense (4/20 - 5/20)",
-			"tech": "N/A ",
-			"links": [
-				{
-					"name": "Google Doc",
-					"link": "https://docs.google.com/document/d/13_HJUcWRvp6wceIT5lGK1Ucv-kKCUDFbWZMEy43expw/edit?usp=sharing"
-				}
-			]
-		},
-		{
 			"title": "Pascal Interpreter(Haskell)",
 			"images": ["PascalInHaskell.png"],
 			"description": "In this project, I implement a similar programming language to pascal using Haskell. This program is written in functional programming in a tree like fashion (4/20)",
@@ -140,6 +155,18 @@
 		}
 	],
 	[
+		{
+			"title": "Text Adventure Design",
+			"images": ["textadventure.png"],
+			"description": "My team and I developed the design of a OOP framework for Text Adventure video games. We incorporated object oriented programming patterns in places that made sense (4/20 - 5/20)",
+			"tech": "N/A ",
+			"links": [
+				{
+					"name": "Google Doc",
+					"link": "https://docs.google.com/document/d/13_HJUcWRvp6wceIT5lGK1Ucv-kKCUDFbWZMEy43expw/edit?usp=sharing"
+				}
+			]
+		},
 		{
 			"title": "Twitter Tweet Tracker",
 			"images": ["NasaScreenshot.PNG", "CnnTTT.jpg", "ElonMuskTTT.jpg"],
