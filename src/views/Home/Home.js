@@ -100,7 +100,8 @@ const Home = () => {
 							Hi, I'm Peyton
 						</Heading>
 						<Paragraph alignSelf="center" margin="xsmall">
-							A Software Developer based in Florida
+							A Computer Science Engineering Student at the University of
+							Florida
 						</Paragraph>
 						<p>
 							<Link to={"/contact"}>
