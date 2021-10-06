@@ -80,7 +80,7 @@ const About = () => {
 								</Link>
 							</Box>
 							<Box alignSelf="center">
-								<a href={"resume20-11-23.pdf"} target="_blank">
+								<a href={"resume21-10-5.pdf"} target="_blank">
 									<Button label="Resume" />
 								</a>
 							</Box>
