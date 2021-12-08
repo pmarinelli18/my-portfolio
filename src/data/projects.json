@@ -1,6 +1,34 @@
 [
 	[
 		{
+		"title": "TPED Dark Ride",
+		"images": [
+			"TPED_LOGO.png"
+		],
+		"description": "The TPED Ride design team is developing a prototype dark ride: A trackless ride system with a drop tower element. There will be 2 scaled prototypes of the ride vehicle: a larger prototype large enough to fit in all the features desired and a smaller prototype capable of moving through an entire ride model. The trackless ride system will make use of an LPS system using ultrasonic sensors and the vehicle will be capable of moveing in any direction using Mecanum Wheels. I am the Lead Design team captain and have Created a project plan for the project and is responsible for designated deliverables to the team. (10/21 - current)",
+		"tech": "Arduino, Raspberry Pi, C++, Motors, Sensors",
+		"links": [
+			{
+				"name": "TPED Website",
+				"link": "https://gatortped.wixsite.com/home"
+			}
+		]
+		},	
+		{
+			"title": "Optum SWE Internship",
+			"images": [
+				"optum.png"
+			],
+			"description": "During this 10 week internship I monitored and maintained in production software that assigns agents with active jobs. I developed JavaScript scripts and a react dashboard to analyze metrics from data that were pulled from 3rd party applications. I displayed these metrics in the React application allowing my system administrator to see how the backend is doing in real time (05/2021 - 08/2021)",
+			"tech": "ServiceNow, Grafana, Splunk, JavaScript, React.JS ",
+			"links": [
+				{
+					"name": "End of Internship Powerpoint",
+					"link": "https://uflorida-my.sharepoint.com/:p:/g/personal/pmarinelli_ufl_edu/EVrDEwbXdRlLh9Vh0_S4xJAB_A8dtLJ7Aixz9wVelrHNVA?e=bHZUIW"
+				}
+			]
+		},
+		{
 			"title": "Interactive Battleship",
 			"images": [
 				"InteractiveBattleship.png",
@@ -11,7 +39,7 @@
 				"InteractiveBattleshipPhysical2.jpg",
 				"InteractiveBattleshipBoat.jpg"
 			],
-			"description": "Interactive battleship is an immersive 2-player battleship game experience. It involves a mobile application where users will complete tasks and interact with the game and a physical battleship set that is used to show the state of the game and immerse the user into the battle. (01/2021 - 05/2021)",
+			"description": "Interactive battleship is an immersive, multiplayer battleship themed experience. Opponents will compete in offensive and defensive mini games to attack each other’s ship until someone sinks the other ship and wins. The game consists of a mobile app and a physical boat prop that can react to the player’s moves in the game through augmented reality and other special effects like LEDs and motors. (01/2021 - 05/2021)",
 			"tech": "Raspberry Pi, GoLang, C#, Unity, Python, TCP, MySQL",
 			"links": [
 				{
@@ -128,7 +156,9 @@
 					"link": "https://www.youtube.com/watch?v=OR3A-i0Y12c&t=0s"
 				}
 			]
-		},
+		}
+	],
+	[
 		{
 			"title": "Pascal Interpreter(Haskell)",
 			"images": ["PascalInHaskell.png"],
@@ -152,9 +182,7 @@
 					"link": "https://github.com/pmarinelli18/grape"
 				}
 			]
-		}
-	],
-	[
+		},
 		{
 			"title": "Text Adventure Design",
 			"images": ["textadventure.png"],

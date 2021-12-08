@@ -45,6 +45,9 @@
 		"skill": "HTML"
 	},
 	{
+		"skill": "CSS"
+	},
+	{
 		"skill": "react-native"
 	},
 	{
@@ -58,5 +61,14 @@
 	},
 	{
 		"skill": "Arduino"
+	},
+	{
+		"skill": "Docker"
+	},
+	{
+		"skill": "Android Studio"
+	},
+	{
+		"skill": "Unity"
 	}
 ]

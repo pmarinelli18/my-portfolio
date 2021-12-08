@@ -67,12 +67,16 @@ const About = () => {
 						<Box className="mainLeftAbout" gridArea="main">
 							<Heading alignSelf="center">About Me</Heading>
 							<Paragraph alignSelf="center">
-								I am a Computer Science Engineering student at the University of
-								Florida. I like challenging myself and finding ways to improve
-								the lives of people around me. This has led me to participate in
-								hackathons, interesting clubs, and projects of my own. I will
-								continue to update this site as I work on more projects. If you
-								wish to get in contact with me, click the link below!
+								I am a Computer Science senior at the University of Florida
+								anticipating to graduate in May 2023. I have a wide variety of
+								projects and experiences. I previously interned as a Software
+								Engineering Intern for Optum(UnitedHealth Group) and the
+								University of Florida Neurosurgery Department. I am passionate
+								about building immersive experiences using technology. I like
+								challenging myself and found myself leading many teams to build
+								interesting projects like the TPED Dark Ride and Tweet Crack. I
+								will continue to update this site as I work on more projects. If
+								you wish to get in contact with me, click the link below!
 							</Paragraph>
 							<Box alignSelf="center" pad="small">
 								<Link to={"/contact"}>
@@ -80,7 +84,7 @@ const About = () => {
 								</Link>
 							</Box>
 							<Box alignSelf="center">
-								<a href={"resume21-10-5.pdf"} target="_blank">
+								<a href={"resume21-11-25.pdf"} target="_blank">
 									<Button label="Resume" />
 								</a>
 							</Box>
