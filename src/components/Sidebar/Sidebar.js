@@ -227,10 +227,11 @@ const SidebarNavigation = () => {
 									return (
 										<Link
 											to={page.extension}
+											style={{ textDecoration: "none" }}
 											onClick={() => setOpenNotification(!openNotification)}
 										>
 											<Box margin={{ left: "medium" }} pad="small">
-												<Text alignSelf="end" size="medium">
+												<Text alignSelf="center" size="medium">
 													{page.name}
 												</Text>
 											</Box>

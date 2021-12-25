@@ -303,6 +303,7 @@ const Projects = () => {
 														target="_blank"
 														pad="small"
 														href={item.link}
+														download={item.link}
 													>
 														<Button label={item.name} />
 													</a>
