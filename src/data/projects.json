@@ -1,19 +1,39 @@
 [
 	[
 		{
-		"title": "TPED Dark Ride",
+		"title": "Tweet Crack ",
 		"images": [
-			"TPED_LOGO.png"
+			"gameplay_screen.png",
+			"main.png",
+			"Screenshot 2021-12-24 041516.png"
 		],
-		"description": "The TPED Ride design team is developing a prototype dark ride: A trackless ride system with a drop tower element. There will be 2 scaled prototypes of the ride vehicle: a larger prototype large enough to fit in all the features desired and a smaller prototype capable of moving through an entire ride model. The trackless ride system will make use of an LPS system using ultrasonic sensors and the vehicle will be capable of moveing in any direction using Mecanum Wheels. I am the Lead Design team captain and have Created a project plan for the project and is responsible for designated deliverables to the team. (10/21 - current)",
-		"tech": "Arduino, Raspberry Pi, C++, Motors, Sensors",
+		"description": "TweetCrack is a mobile trivia game where players get to guess which person said a certain tweet. The game features different trending categories such as sports, politics, health, news, etc. After selecting a category the user will be presented with a series of tweets, each with its own list of possible Twitter users. Each round consists of 5 tweets and each time the player guesses all 5 users correctly they earn a special badge for that category. The more times they win, the more badges they collect. Collect as many badges as possible to become a verified twitter master! (11/2021 - 12/2021)",
+		"tech": "Java, Android Studio, Twitter API",
 		"links": [
 			{
-				"name": "TPED Website",
-				"link": "https://gatortped.wixsite.com/home"
+				"name": "Source Code",
+				"link": "https://github.com/erik-rosa/TweetCrack"
+			},
+			{
+				"name": "Download Via Google Play",
+				"link": "https://play.google.com/store/apps/details?id=com.Peyton.tweetcrack"
 			}
 		]
-		},	
+		},
+		{
+			"title": "TPED Dark Ride",
+			"images": [
+				"TPED_LOGO.png"
+			],
+			"description": "The TPED Ride design team is developing a prototype dark ride: A trackless ride system with a drop tower element. There will be 2 scaled prototypes of the ride vehicle: a larger prototype large enough to fit in all the features desired and a smaller prototype capable of moving through an entire ride model. The trackless ride system will make use of an LPS system using ultrasonic sensors and the vehicle will be capable of moveing in any direction using Mecanum Wheels. I am the Lead Design team captain and have Created a project plan for the project and is responsible for designated deliverables to the team. (10/21 - current)",
+			"tech": "Arduino, Raspberry Pi, C++, Motors, Sensors",
+			"links": [
+				{
+					"name": "TPED Website",
+					"link": "https://gatortped.wixsite.com/home"
+				}
+			]
+			},	
 		{
 			"title": "Optum SWE Internship",
 			"images": [
@@ -140,7 +160,10 @@
 					"link": "http://neuro6.herokuapp.com/Home"
 				}
 			]
-		},
+		}
+	],
+	[
+		
 		{
 			"title": "Silent Disco",
 			"images": ["SilentDiscoStart.png", "SilentDiscoHome.png"],
@@ -156,9 +179,7 @@
 					"link": "https://www.youtube.com/watch?v=OR3A-i0Y12c&t=0s"
 				}
 			]
-		}
-	],
-	[
+		},
 		{
 			"title": "Pascal Interpreter(Haskell)",
 			"images": ["PascalInHaskell.png"],
