@@ -1,6 +1,31 @@
 [
 	[
 		{
+			"title": "Plague Clinic",
+			"images": [
+				"plagueClinicStart.jpg",
+				"plagueClinicBox.jpg",
+				"plagueClinicWiring.jpg"
+			],
+			"description": "In Plague Clinic, the player treats patients suffering from common diseases in the Middle Ages. The player uses a special box controller - \"The Doctor's Kit\" - that indicates the time countdown for the task with colored lights and allows the user to use potions, acupuncture, and other elements. This interactive experience was developed for Swamp Hacks where my team and I won best In-Theme Award (1/2022 - 1/2022)",
+			"tech": "Unity, C#, Arduino, RFID Tags, LCD display, rotary encoders, and potentiometers",
+			"links": [
+				{
+					"name": "Source Code",
+					"link": "https://github.com/jaberrio/Doctor"
+				},
+				{
+					"name": "Video Presentation",
+					"link": "https://www.youtube.com/watch?v=CaYwqcP5R2s"
+				},
+				{
+					"name": "Devpost Submission",
+					"link": "https://devpost.com/software/plague-clinic"
+				}
+
+			]
+			},
+		{
 		"title": "Tweet Crack ",
 		"images": [
 			"gameplay_screen.png",
@@ -106,10 +131,10 @@
 			"title": "TPED Coaster",
 			"images": [
 				"CoasterControlBoard.png",
-				"TPEDCoasterDesign.PNG",
-				"CoasterDesign.jpg",
+				"DT_A_Overview.png",
 				"ChalkDesign.jpeg",
-				"ControlPanelDesign1.jpeg"
+				"ControlPanelDesign1.jpeg",
+				"TPEDCoasterDesign.PNG"
 			],
 			"description": " The Theme Park Engineering and Design Club is working on a small scale working roller coaster. My team is working on the controls for the coaster; We are programming an arduino to maintain block sections and dispatch trains. (8/19 - current)",
 			"tech": "Arduino, hardware including motors, sensors, switches, ect.",
@@ -121,22 +146,6 @@
 				{
 					"name": "Design Team Website",
 					"link": "https://gatortped.wixsite.com/home/blank-page-4"
-				}
-			]
-		},
-		{
-			"title": "Look After",
-			"images": ["LookAfter.png", "LookAfterHome.png", "LookAfterStart.png"],
-			"description": "Social media can sometimes be a toxic environment. Without proper attention, friends and family can be consumed by the compiled negativity. This application aims to take a deeper look at the users emotions and personality while pointing out instances where they may not have been healthy in conversation. Look After tries to promote healthy conversation by providing a URL to the users messages. In development we used ASP.net MVC in combination with the Twitter API and the Google Natural Language Processing API. We also used multiple studies and datasets based on the big 5 personality traits and 6 emotions to analyze and interpret the data returned from the APIs. (9/20)",
-			"tech": "ASP.net, C#, Google-cloud-language, javascript, mvc, twitterAPI, Bootstrap",
-			"links": [
-				{
-					"name": "Source Code",
-					"link": "https://dev.azure.com/mimmam/_git/Tweeter-Tweet-Tracker-2.0?path=%2F&version=GBmaster&_a=contents"
-				},
-				{
-					"name": "Test Site",
-					"link": "https://lookafter.azurewebsites.net/"
 				}
 			]
 		},
@@ -163,7 +172,22 @@
 		}
 	],
 	[
-		
+		{
+			"title": "Look After",
+			"images": ["LookAfter.png", "LookAfterHome.png", "LookAfterStart.png"],
+			"description": "Social media can sometimes be a toxic environment. Without proper attention, friends and family can be consumed by the compiled negativity. This application aims to take a deeper look at the users emotions and personality while pointing out instances where they may not have been healthy in conversation. Look After tries to promote healthy conversation by providing a URL to the users messages. In development we used ASP.net MVC in combination with the Twitter API and the Google Natural Language Processing API. We also used multiple studies and datasets based on the big 5 personality traits and 6 emotions to analyze and interpret the data returned from the APIs. (9/20)",
+			"tech": "ASP.net, C#, Google-cloud-language, javascript, mvc, twitterAPI, Bootstrap",
+			"links": [
+				{
+					"name": "Source Code",
+					"link": "https://dev.azure.com/mimmam/_git/Tweeter-Tweet-Tracker-2.0?path=%2F&version=GBmaster&_a=contents"
+				},
+				{
+					"name": "Test Site",
+					"link": "https://lookafter.azurewebsites.net/"
+				}
+			]
+		},
 		{
 			"title": "Silent Disco",
 			"images": ["SilentDiscoStart.png", "SilentDiscoHome.png"],
@@ -201,6 +225,10 @@
 				{
 					"name": "Source Code",
 					"link": "https://github.com/pmarinelli18/grape"
+				},
+				{
+					"name": "Devpost Submission",
+					"link": "https://devpost.com/software/grape-yz14ld"
 				}
 			]
 		},
