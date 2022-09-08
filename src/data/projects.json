@@ -1,6 +1,58 @@
 [
 	[
 		{
+			"title": "Walt Disney World Internship",
+			"images": [
+				"wdw.png"
+			],
+			"description": "Supporting Global Engineering and Technology by completing a variety of projects using 2D modeling and HMI software, procedural documentation, and acceptance test procedures(8/22 - current)",
+			"tech": "Genesis64, AutoCAD, C++",
+			"links": [
+
+			]
+		},
+		{
+			"title": "Oceaneering Internship",
+			"images": [
+				"Oceaneering.jpg",
+				"IMG-8365.jpg"
+			],
+			"description": "Designed and evaluated alternative GUI libraries for a cross-platform topside ROV application for an exhaustive UI trade study. Developed and deployed a cross-platform application for each of the 11 alternatives to qualify features. Thoroughly documented alternatives’ criteria metrics and made informed decisions on down selecting after each of the 3 phases. (4/22 - 8/22)",
+			"tech": "Linux, VMWare, Qt, PyQt, GTK+, GTK#, Avalonia, JavaFx, C#",
+			"links": [
+
+			]
+		},
+		
+		{
+			"title": "TPED Coaster",
+			"images": [
+				"CoasterControlBoard.png",
+				"Coasterbuild6.jpg",
+				"Coasterbuild1.jpeg",
+				"Coasterbuild5.png",
+				"Coasterbuild3.jpeg",
+				"Coasterbuild2.jpg",
+				"Coasterbuild4.jpg",
+				"DT_A_Overview.png",
+				"ChalkDesign.jpeg",
+				"ControlPanelDesign1.jpeg",
+				"TPEDCoasterDesign.PNG"
+			],
+			"description": " The Theme Park Engineering and Design Club is working on a small scale working roller coaster. My team is working on the controls for the coaster; We are programming an arduino to maintain block sections and dispatch trains. (8/19 - current)",
+			"tech": "Arduino, hardware including motors, sensors, switches, ect.",
+			"links": [
+				{
+					"name": "Source Code",
+					"link": "https://github.com/pmarinelli18/TPEDCoasterControlsFall2019"
+				},
+				{
+					"name": "Design Team Website",
+					"link": "https://gatortped.wixsite.com/home/blank-page-4"
+				}
+			]
+		},
+		{
 			"title": "Plague Clinic",
 			"images": [
 				"plagueClinicStart.jpg",
@@ -24,6 +76,17 @@
 				}
 
 			]
+			},
+			{
+				"title": "UKG Internship",
+				"images": [
+					"UKG.png"
+				],
+				"description": "Developed and supported internal-facing C# .Net Core application that processes tax payments for Canadian UKGPro Customers. Developed features for a Java Spring and Mongo application that finds discrepancies from numerous sources of tax data. (1/22 - 4/22)",
+				"tech": "C#, .Net Core, JavaSpring, Mongo",
+				"links": [
+	
+				]
 			},
 		{
 		"title": "Tweet Crack ",
@@ -58,21 +121,7 @@
 					"link": "https://gatortped.wixsite.com/home"
 				}
 			]
-			},	
-		{
-			"title": "Optum SWE Internship",
-			"images": [
-				"optum.png"
-			],
-			"description": "During this 10 week internship I monitored and maintained in production software that assigns agents with active jobs. I developed JavaScript scripts and a react dashboard to analyze metrics from data that were pulled from 3rd party applications. I displayed these metrics in the React application allowing my system administrator to see how the backend is doing in real time (05/2021 - 08/2021)",
-			"tech": "ServiceNow, Grafana, Splunk, JavaScript, React.JS ",
-			"links": [
-				{
-					"name": "End of Internship Powerpoint",
-					"link": "https://uflorida-my.sharepoint.com/:p:/g/personal/pmarinelli_ufl_edu/EVrDEwbXdRlLh9Vh0_S4xJAB_A8dtLJ7Aixz9wVelrHNVA?e=bHZUIW"
-				}
-			]
-		},
+		},	
 		{
 			"title": "Interactive Battleship",
 			"images": [
@@ -98,6 +147,23 @@
 				{
 					"name": "Presentation/Demo",
 					"link": "https://www.youtube.com/watch?v=RmgGLRsu9t4"
+				}
+			]
+		}
+		
+	],
+	[
+		{
+			"title": "Optum SWE Internship",
+			"images": [
+				"optum.png"
+			],
+			"description": "During this 10 week internship I monitored and maintained in production software that assigns agents with active jobs. I developed JavaScript scripts and a react dashboard to analyze metrics from data that were pulled from 3rd party applications. I displayed these metrics in the React application allowing my system administrator to see how the backend is doing in real time (05/2021 - 08/2021)",
+			"tech": "ServiceNow, Grafana, Splunk, JavaScript, React.JS ",
+			"links": [
+				{
+					"name": "End of Internship Powerpoint",
+					"link": "https://uflorida-my.sharepoint.com/:p:/g/personal/pmarinelli_ufl_edu/EVrDEwbXdRlLh9Vh0_S4xJAB_A8dtLJ7Aixz9wVelrHNVA?e=bHZUIW"
 				}
 			]
 		},
@@ -128,28 +194,6 @@
 			]
 		},
 		{
-			"title": "TPED Coaster",
-			"images": [
-				"CoasterControlBoard.png",
-				"DT_A_Overview.png",
-				"ChalkDesign.jpeg",
-				"ControlPanelDesign1.jpeg",
-				"TPEDCoasterDesign.PNG"
-			],
-			"description": " The Theme Park Engineering and Design Club is working on a small scale working roller coaster. My team is working on the controls for the coaster; We are programming an arduino to maintain block sections and dispatch trains. (8/19 - current)",
-			"tech": "Arduino, hardware including motors, sensors, switches, ect.",
-			"links": [
-				{
-					"name": "Source Code",
-					"link": "https://github.com/pmarinelli18/TPEDCoasterControlsFall2019"
-				},
-				{
-					"name": "Design Team Website",
-					"link": "https://gatortped.wixsite.com/home/blank-page-4"
-				}
-			]
-		},
-		{
 			"title": "Neurosurgery Website",
 			"images": [
 				"FinalPhoto1.png",
@@ -169,9 +213,7 @@
 					"link": "http://neuro6.herokuapp.com/Home"
 				}
 			]
-		}
-	],
-	[
+		},
 		{
 			"title": "Look After",
 			"images": ["LookAfter.png", "LookAfterHome.png", "LookAfterStart.png"],
@@ -243,7 +285,9 @@
 					"link": "https://docs.google.com/document/d/13_HJUcWRvp6wceIT5lGK1Ucv-kKCUDFbWZMEy43expw/edit?usp=sharing"
 				}
 			]
-		},
+		}
+	],
+	[
 		{
 			"title": "Twitter Tweet Tracker",
 			"images": ["NasaScreenshot.PNG", "CnnTTT.jpg", "ElonMuskTTT.jpg"],

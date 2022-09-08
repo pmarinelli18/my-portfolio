@@ -127,7 +127,7 @@ const Home = () => {
 								pad="xsmall"
 							>
 								<Carousel fill controls={false} play={5000}>
-									<Image fit="contain" fill src="0.jpg" />
+									<Image fit="contain" fill src="00.jpg" />
 									<Image fit="contain" fill src="1.jpeg" />
 									<Image fit="contain" fill src="2.jpg" />
 									<Image fit="contain" fill src="3.jfif" />
