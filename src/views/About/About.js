@@ -67,16 +67,19 @@ const About = () => {
 						<Box className="mainLeftAbout" gridArea="main">
 							<Heading alignSelf="center">About Me</Heading>
 							<Paragraph alignSelf="center">
-								I am a Computer Science senior at the University of Florida
-								anticipating to graduate in May 2023. I have a wide variety of
-								projects and experiences. I previously interned as a Software
-								Engineering Intern for Optum(UnitedHealth Group) and the
-								University of Florida Neurosurgery Department. I am passionate
-								about building immersive experiences using technology. I like
-								challenging myself and found myself leading many teams to build
-								interesting projects like the TPED Dark Ride and Tweet Crack. I
-								will continue to update this site as I work on more projects. If
-								you wish to get in contact with me, click the link below!
+								I am a recent graduate in Computer Science from the University
+								of Florida, with a diverse range of projects and experiences
+								under my belt. I have had the privilege of interning at esteemed
+								organizations such as Walt Disney World, Oceaneering, Optum
+								(UnitedHealth Group), and the University of Florida Neurosurgery
+								Department. My passion lies in creating immersive experiences
+								through the application of technology. I thrive on challenging
+								myself and have taken on leadership roles in various teams,
+								spearheading the development of captivating projects like the
+								TPED Dark Ride and Tweet Crack. As I continue to embark on new
+								projects, I will keep this site updated. If you would like to
+								get in touch with me, please feel free to click on the link
+								below.
 							</Paragraph>
 							<Box alignSelf="center" pad="small">
 								<Link to={"/contact"}>
@@ -84,7 +87,7 @@ const About = () => {
 								</Link>
 							</Box>
 							<Box alignSelf="center">
-								<a href={"resume22-2-1.pdf"} target="_blank">
+								<a href={"resume23-6-21.pdf"} target="_blank">
 									<Button label="Resume" />
 								</a>
 							</Box>

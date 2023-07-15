@@ -70,5 +70,27 @@
 	},
 	{
 		"skill": "Unity"
+	},
+	{
+		"skill": "Angular"
+	},
+	{
+		"skill": "GTest"
+	},
+	{
+		"skill": "Allen Bradley PLC"
+	},
+	{
+		"skill": "GraphWorX"
+	},
+	{
+		"skill": "Studio5000"
+	},
+	{
+		"skill": "Qt"
+	},
+	{
+		"skill": "Avalona"
 	}
+
 ]

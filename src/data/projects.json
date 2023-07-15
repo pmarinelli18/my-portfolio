@@ -1,21 +1,22 @@
 [
-	[		{
-			"title": "Modeling, Simulation, and Training Tools Internship",
+	[		
+		{
+			"title": "Walt Disney Internship II",
 			"images": [
 				"wdw.png"
 			],
-			"description": "Developed a real-time software application using C++ that facilitated hardware-in-the-loop (HIL) simulations of rides and attractions using PLCs and simulation software. Designed and developed a testing framework for the existing codebase using GTest and patched bugs as they are identified. Enhanced existing software by adding new features requested by end users(1/23 - 6/23)",
+			"description": "During my second Walt Disney World Internship I was apart of the Modeling, Simulation, and Training Tools team as a systems engineer intern. I helped Develope a real-time software application using C++ that facilitated hardware-in-the-loop (HIL) simulations of rides and attractions using PLCs and simulation software. I Designed and developed a testing framework for the existing codebase using GTest and patched bugs as they are identified. Also, I Enhanced existing software by adding new features requested by end users(1/23 - 6/23)",
 			"tech": "C++, Jira, Git, Hardware in the loop, Gtest, Allen Bradley PLCs",
 			"links": [
 
 			]
 		},
 		{
-			"title": "Ride Control Internship",
+			"title": "Walt Disney Internship I",
 			"images": [
 				"wdw.png"
 			],
-			"description": "Completed a variety of projects using 2D modeling, HMI software, procedural documentation, and acceptance test procedures. Performed on-site analysis and testing for various Rockwell Allen Bradley PLC projects which required troubleshooting, problem-solving, and constant attention to safety. Developed a multiscreen GraphWorX HMI that interfaced with a PLC through Kepware OPC drivers (8/22 - 1/23)",
+			"description": "At Walt Disney World, I was a Ride Control Engineer Intern on the Ride and Show Control Engineer Team. In this role I Completed a variety of projects using 2D modeling, HMI software, procedural documentation, and acceptance test procedures. I Performed on-site analysis and testing for various Rockwell Allen Bradley PLC projects which required troubleshooting, problem-solving, and constant attention to safety. I also Developed a multiscreen GraphWorX HMI that interfaced with a PLC through Kepware OPC drivers (8/22 - 1/23)",
 			"tech": "Allen Bradley PLCs, GraphWorx, Genesis32, Genesis64, KepWare AutoCAD, Python, C++, Ladder Logic",
 			"links": [
 
@@ -33,7 +34,6 @@
 
 			]
 		},
-		
 		{
 			"title": "TPED Coaster",
 			"images": [
@@ -86,8 +86,8 @@
 				}
 
 			]
-			},
-			{
+		},
+		{
 				"title": "UKG Internship",
 				"images": [
 					"UKG.png"
@@ -97,7 +97,7 @@
 				"links": [
 	
 				]
-			},
+		},
 		{
 		"title": "Tweet Crack ",
 		"images": [
@@ -107,16 +107,17 @@
 		],
 		"description": "TweetCrack is a mobile trivia game where players get to guess which person said a certain tweet. The game features different trending categories such as sports, politics, health, news, etc. After selecting a category the user will be presented with a series of tweets, each with its own list of possible Twitter users. Each round consists of 5 tweets and each time the player guesses all 5 users correctly they earn a special badge for that category. The more times they win, the more badges they collect. Collect as many badges as possible to become a verified twitter master! (11/2021 - 12/2021)",
 		"tech": "Java, Android Studio, Twitter API",
-		"links": [
-			{
-				"name": "Source Code",
-				"link": "https://github.com/erik-rosa/TweetCrack"
-			},
-			{
-				"name": "Download Via Google Play",
-				"link": "https://play.google.com/store/apps/details?id=com.Peyton.tweetcrack"
-			}
-		]
+		"links": 
+			[
+				{
+					"name": "Source Code",
+					"link": "https://github.com/erik-rosa/TweetCrack"
+				},
+				{
+					"name": "Download Via Google Play",
+					"link": "https://play.google.com/store/apps/details?id=com.Peyton.tweetcrack"
+				}
+			]
 		},
 		{
 			"title": "TPED Dark Ride",
@@ -131,7 +132,10 @@
 					"link": "https://gatortped.wixsite.com/home"
 				}
 			]
-		},	
+		}
+		
+	],
+	[	
 		{
 			"title": "Interactive Battleship",
 			"images": [
@@ -159,10 +163,7 @@
 					"link": "https://www.youtube.com/watch?v=RmgGLRsu9t4"
 				}
 			]
-		}
-		
-	],
-	[
+		},
 		{
 			"title": "Optum SWE Internship",
 			"images": [
@@ -283,7 +284,9 @@
 					"link": "https://devpost.com/software/grape-yz14ld"
 				}
 			]
-		},
+		}
+	],
+	[
 		{
 			"title": "Text Adventure Design",
 			"images": ["textadventure.png"],
@@ -295,9 +298,7 @@
 					"link": "https://docs.google.com/document/d/13_HJUcWRvp6wceIT5lGK1Ucv-kKCUDFbWZMEy43expw/edit?usp=sharing"
 				}
 			]
-		}
-	],
-	[
+		},
 		{
 			"title": "Twitter Tweet Tracker",
 			"images": ["NasaScreenshot.PNG", "CnnTTT.jpg", "ElonMuskTTT.jpg"],
