@@ -1,11 +1,11 @@
 [
 	[
 		{
-			"title": "Walt Disney World Internship",
+			"title": "Walt Disney World Internships",
 			"images": [
 				"wdw.png"
 			],
-			"description": "Supporting Global Engineering and Technology by completing a variety of projects using 2D modeling and HMI software, procedural documentation, and acceptance test procedures(8/22 - current)",
+			"description": "Modeling, Simulation, and Training Tools Team\nDeveloped a real-time software application using C++ that facilitated hardware-in-the-loop (HIL) simulations of rides and attractions using PLCs and simulation software. Designed and developed a testing framework for the existing codebase using GTest and patched bugs as they are identified. Enhanced existing software by adding new features requested by end users(1/23 - 6/23)\nRide Control Engineer Team \nCompleted a variety of projects using 2D modeling, HMI software, procedural documentation, and acceptance test procedures. Performed on-site analysis and testing for various Rockwell Allen Bradley PLC projects which required troubleshooting, problem-solving, and constant attention to safety. Developed a multiscreen GraphWorX HMI that interfaced with a PLC through Kepware OPC drivers (8/22 - 1/23)",
 			"tech": "Genesis64, AutoCAD, C++",
 			"links": [
 
